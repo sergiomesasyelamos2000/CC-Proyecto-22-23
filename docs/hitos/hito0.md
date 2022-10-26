@@ -1,4 +1,4 @@
-# Hito0
+# Hito 0
 >Versión 0.1.0
 ## Contenidos
 
