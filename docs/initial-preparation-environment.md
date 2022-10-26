@@ -10,65 +10,78 @@ Este documento versa sobre los pasos a seguir para la correcta preparación del 
 
 ### Configuración de nombre y correo electrónico para que apareza en los commits
 
-```
+
 A continuación, se deberán asociar tanto un correo electrónico como un usuario a git, que nos identificará cuando se realizcen cambios en el repositorio. Para ello, deberemos hacer uso de los siguientes comandos:
 
+```
 $ git config --global user.name "Sergio Mesas Yelamos"
 $ git config --global user.email mesasyelamos@gmail.com
+```
 
 Una vez realizado lo anterior, si empleamos el comando siguiente, podemos ver que los cambios han sido modificados correctamente:
 
-$ git config --list
-
-*PONER IMAGENES QUE ESTAN EN DRIVE*
 ```
+$ git config --list
+```
+El resultado de la orden anterior es:
+
+![config](./img/configList.png)
+
 ### Creación de claves y subida de clave pública a GitHub
 
 Posteriormente, se creará un par de claves público/privada para poder conectar con el repositorio de GitHub mediante SSH.
 En primer lugar, se deberán generar las claves haciendo uso del siguiente comando:
+
+```
 $ ssh-keygen -t rsa -b 4096 -C "mesasyelamos@gmail.com"
+```
 
 Destacar que el parámetro _-t rsa_ indica que el tipo de algoritmo para la generación de la clave pública será _rsa_ (aunque se trata de un algoritmo antiguo es el más utilizado) mientras que el parámetro _-b 4096_ se refiere al tamaño de _bits_ de la clave.
 
 El comando anterior, nos arrojará el siguiente resultado, el cual nos informa que las claves han sido generadas correctamente y almacenadas en la carpeta _.ssh_:
 
-*PONER IMAGEN DE SSH*
-
-
-![keys](./img/profile.png)
+![keys](./img/ssh-generate.png)
 
 Además, se deben añadir las claves anteriormente generadas al agente _ssh_. Para ello, accederemos en como superadmiinistrador mediante el comando:
 
+```
 $ sudo -s -H 
+```
 
 Acto seguido, iniciaremos el agente _ssh_ en segundo plano:
 
+```
 $ eval "$(ssh-agent -s)"
+```
 
 Por último, se agregará la clave privada al agente _ssh_ a través del comando:
 
+```
 $ ssh-add /home/sergio/.ssh/id_rsa
+```
 
 Seguidamente, para poder autenticarnos como usuarios vía _ssh_, en nuestro perfil de GitHub (en el apartado _Settings_ > _SSH and GPG keys_) deberemos añadir la clave pública almacenada en el fichero _/home/migue/.ssh/id_rsa.pub_, tal y como podemos observar en la siguiente Figura:
 
-*PONER IMAGEN DE LA CLAVE PUBLICA 1*
+![publicKey](./img/public-key.png)
 
 Una vez agreagada, nos aparecerá de la siguiente manera:
 
 *PONER IMAGEN DE LA CLAVE PUBLICA 2*
 
-![addKeys](./img/addKeys.png)
+![addKeys](./img/ssh-github.png)
 
-Para comprobar que el proceso de configuración se ha realizado correctamente, realizaremos una pruena de conexión mediante el siguiente comando:
+Para comprobar que el proceso de configuración se ha realizado correctamente, realizaremos una prueba de conexión mediante el siguiente comando:
 
+```
 $ ssh -T git@github.com
+```
 
 A continuación, con el objetivo de firmar las claves, nos pedirá la contraseña introducida en el paso de generación de claves. En caso de no producirse ningún error, la salida debe ser similar a la siguiente Figura:
 
-*PONER IMAGEN DE LA SALIDA *
+![okKeys](./img/ssh-ok.png)
 
 ### Activar el segundo factor de autenticación
 
 Por otro lado, en cuanto a la configuración de la autenticación de dos factores, deberemos dirigirnos al apartado de _Settings_ > _Password and authentication_ y habilitar la sección _Two-factor authentication_. En este caso, se ha seleccionado el envío de un código a través de un mensaje de texto (SMS) como segunda forma de autenticación de GitHub.
 
-![auth](./img/auth.png)
+![addKeys](./img/2FA.png)
