@@ -19,4 +19,4 @@ Redactar la descripción del proyecto a realizar
 
 ## :pushpin: Descripción del problema a resolver y usos de git y GitHub:
 
-- En el siguiente enlace se podrá acceder al [Hito 0](https://github.com/sergiomesasyelamos2000/CC-Proyecto-22-23/blob/bfeb5189f367330d1630f8d500b17ffc64bb0840/docs/initial-preparation-environment.md) donde se lleva a cabo toda la configuración y creación del repositorio así como del par de claves (pública y privda) y de la licencia empleada.
+- En el siguiente enlace se podrá acceder al [Hito 0](/docs/Hitos/initial-preparation-environment.md) donde se lleva a cabo toda la configuración y creación del repositorio así como del par de claves (pública y privda) y de la licencia empleada.

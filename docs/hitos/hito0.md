@@ -40,5 +40,5 @@ PONER NOMBRE DEL PROYECTO
 
 En esta sección se muestra documentación adicional al proyecto que ha sido relevante para el desarrollo del mismo. Se explicará lo siguiente:
 
-1. [Preparación inicial del entorno de trabajo](./docs/initial-preparation-environment.md)
+1. [Preparación inicial del entorno de trabajo](/docs/initial-preparation-environment.md)
 2. [Licencia](/LICENSE)

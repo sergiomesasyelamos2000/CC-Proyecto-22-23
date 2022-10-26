@@ -90,4 +90,4 @@ A continuación, con el objetivo de firmar las claves, nos pedirá la contraseñ
 
 Por otro lado, en cuanto a la configuración de la autenticación de dos factores, deberemos dirigirnos al apartado de _Settings_ > _Password and authentication_ y habilitar la sección _Two-factor authentication_. En este caso, se ha seleccionado el envío de un código a través de un mensaje de texto (SMS) como segunda forma de autenticación de GitHub.
 
-![addKeys](./img/2FA.png)
+![2FA](./img/2FA.png)
