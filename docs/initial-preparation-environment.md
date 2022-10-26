@@ -5,8 +5,16 @@ Este documento versa sobre los pasos a seguir para la correcta preparación del 
 
 ### Creación de los repositorios
 
-- [Fork del Repositorio de Cloud Computing 22-23](https://github.com/sergiomesasyelamos2000/CC-22-23): Fork realizado al repositorio de la asignatura de Cloud Computing a mi cuenta de GitHub.  
-- [Repositorio del Proyecto](https://github.com/sergiomesasyelamos2000/CC-Proyecto-22-23): Repositorio que contiene el proyecto a desarrollar en la asignatura  
+- [Fork del Repositorio de Cloud Computing 22-23](https://github.com/sergiomesasyelamos2000/CC-22-23): Fork realizado al repositorio de la asignatura de Cloud Computing a mi cuenta de GitHub.
+
+
+- [Repositorio del Proyecto](https://github.com/sergiomesasyelamos2000/CC-Proyecto-22-23): Repositorio que contiene el proyecto a desarrollar en la asignatura así como todos los elementos necesarios, entre ellos la licencia. En este caso, se ha seleccionado la licencia _MIT_ ya que implica una baja cantidad de limitaciones y permite su modificación.
+
+Una vez realizado lo anterior, se puede clonar dicho repositorio desde GitHub a local mediante el comando:
+
+```
+$ git clone https://github.com/sergiomesasyelamos2000/CC-Proyecto-22-23
+```
 
 ### Configuración de nombre y correo electrónico para que apareza en los commits
 
@@ -65,8 +73,6 @@ Seguidamente, para poder autenticarnos como usuarios vía _ssh_, en nuestro perf
 ![publicKey](./img/public-key.png)
 
 Una vez agreagada, nos aparecerá de la siguiente manera:
-
-*PONER IMAGEN DE LA CLAVE PUBLICA 2*
 
 ![addKeys](./img/ssh-github.png)
 
