@@ -19,4 +19,4 @@ Redactar la descripción del proyecto a realizar
 
 ## :pushpin: Descripción del problema a resolver y usos de git y GitHub:
 
-- En el siguiente enlace se podrá acceder al [Hito 0](/docs/Hitos/initial-preparation-environment.md) donde se lleva a cabo toda la configuración y creación del repositorio así como del par de claves (pública y privda) y de la licencia empleada.
+- En el siguiente enlace se podrá acceder al [Hito 0](docs/hitos/hito0.md) donde se lleva a cabo toda la configuración y creación del repositorio así como del par de claves (pública y privda) y de la licencia empleada.
