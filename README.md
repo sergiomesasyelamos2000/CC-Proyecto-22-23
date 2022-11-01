@@ -5,7 +5,7 @@ Sistema de análisis de libros basado en opiniones de lectores
 
 ***
 
-<img src="./docs/img/logo.png" alt="drawing" width="200"/>
+<img src="./docs/img/logo.png" alt="drawing"/>
 
 ## :pencil2: Descripción :pencil2:
 
