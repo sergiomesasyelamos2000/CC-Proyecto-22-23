@@ -30,7 +30,7 @@ La solución propuesta para resolver este problema es la creación de un sistema
 
 ### Nombre del proyecto
 
-ReadBook
+# :book: ReadBook # :book:
 
 <a name="Additional"></a>
 ## Documentación Adicional
