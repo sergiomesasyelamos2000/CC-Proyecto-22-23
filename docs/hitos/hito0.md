@@ -1,5 +1,5 @@
 # Hito 0
->Versión 0.1.0
+>Versión 0.0.1
 ## Contenidos
 
 * [Descripción del proyecto](#item1)
