@@ -15,7 +15,10 @@ Una vez realizado lo anterior, se puede clonar dicho repositorio desde GitHub a 
 ```
 $ git clone https://github.com/sergiomesasyelamos2000/CC-Proyecto-22-23
 ```
+### Configuración de la cuenta personal de GitHub
+Con el objetivo de poder identificarnos de una mejor manera dentro de la plataforma, se ha añadido una imagen de perfil así como una descripción explicativa sobre nosotros y sobre el propio repositorio personal, facilitando con ello el seguimiento de este:
 
+![profile](./img/profile.png)
 ### Configuración de nombre y correo electrónico para que apareza en los commits
 
 
@@ -90,4 +93,4 @@ A continuación, con el objetivo de firmar las claves, nos pedirá la contraseñ
 
 Por otro lado, en cuanto a la configuración de la autenticación de dos factores, deberemos dirigirnos al apartado de _Settings_ > _Password and authentication_ y habilitar la sección _Two-factor authentication_. En este caso, se ha seleccionado el envío de un código a través de un mensaje de texto (SMS) como segunda forma de autenticación de GitHub.
 
-![addKeys](./img/2FA.png)
+![2FA](./img/2FA.png)
