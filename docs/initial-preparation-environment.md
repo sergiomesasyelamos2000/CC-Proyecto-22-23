@@ -15,7 +15,10 @@ Una vez realizado lo anterior, se puede clonar dicho repositorio desde GitHub a 
 ```
 $ git clone https://github.com/sergiomesasyelamos2000/CC-Proyecto-22-23
 ```
+### Configuración de la cuenta personal de GitHub
+Con el objetivo de poder identificarnos de una mejor manera dentro de la plataforma, se ha añadido una imagen de perfil así como una descripción explicativa sobre nosotros y sobre el propio repositorio personal, facilitando con ello el seguimiento de este:
 
+![profile](./img/profile.png)
 ### Configuración de nombre y correo electrónico para que apareza en los commits
 
 

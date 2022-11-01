@@ -11,29 +11,26 @@
 
 ### Descripción del problema
 
-Imagina que has acabado un grado universitario, o se te ha acabado un contrato de trabajo. Es el momento de buscar un trabajo, pero ¿como y donde buscamos?. Muchos no hemos encontrado en esa situación de incertidumbre. Existen multitud de plataformas de empleo donde encontrar numerosas ofertas pero muchas de ellas, no concuerdan con lo que buscamos o simplemente no son para nosotros. Internet nos facilita la vida, pero también provoca un exceso de información que pueda hacer difícil hacer una buena selección y encontrar aquella información o en este caso ofertas de trabajo que podrían encajar con nosotros o que pudiéramos tener posibilidades y así optimizar nuestra selección.
-Por otra parte, una vez inmersos en proceso de selección no somos validos para el puesto o simplemente no encajamos, o aceptamos la primera oferta por "miedo a no tener mas". Por lo tanto la gran pregunta es ¿Como puedo buscar trabajo de manera eficiente y acertada?
+El proceso de decisión sobre el libro a leer siempre es un procedimiento tedioso y en la mayoría de ocasiones agotador para el lector, el cual llega a abandonar este proceso de búsqueda. Por consiguiente, con el objetivo de suplir este problema, se llevará a cabo un sistema para la gestión de libros que permita añadir, eliminar o editar los diferentes libros y novedades que se vayan lanzando al mercado con distintos parámetros como pueden ser el editor, autor, título, número de ISBN, tipo de libro, temática y sinopsis. La aplicación permitirá buscar libros a través de diferentes filtros como los mencionados anteriormente así como la posibilidad de establecer diversos estados para un libro como por ejemplo, "Favoritos", "Visto recientemente", "Leer ahora" o "He leído", entre otros.
+De esta manera, en el sistema existen dos tipos de usuarios:
+
+* Un usuario administrador el cual podrá realizar funciones como añadir, eliminar, actualizar o editar los parámetros de los libros mencionados anteriormente.
+* Un usuario lector que puede consultar las novedades existentes en la actualidad, seleccionar libros favoritos y visualizarlos, qué libros ha visto recientemente, el idioma en el que se encuentra, la categoría a la que pertenece, qué autor/es han escrito el libro, etc.
 
 ### Lógica de negocio
 
-La solución propuesta para resolver este problema es la creación de un sistema que recibirá curriculums de usuarios y le ofrecerá una listado de ofertas que sean compatibles y afines con los usuarios, es decir el sistema predecirá en que puestos tienen mas posibilidades para entrar y encajar.Para ello el sistema convertirá la información de los curriculums a un formato  JSON. De esos curriculums convertidos, se extraerán palabras clave que serán usadas para obtener un listado de empleos de diferentes APIS ofrecidas por plataformas como Indeed, Glasdoor o Linkedin.
-Paralelamente a esto se realizará un proceso de web scraping sobre perfiles de plataformas como Linkedin, Indeed o Glasdoor para aumentar mas la fuente de conocimiento para que el resultado del proceso sea más adecuado.  
-
-Una vez obtenido un listado amplio de empleos, mediante un algoritmo  se usará la información de los curriculums y la base datos obtenida del web scramping para clasificar las ofertas en función de la compatibilidad que puedan tener los candidatos con estas
-
-El resultado de este procesamiento será una lista de afinidad de ofertas de manera que el usuario podrá ver como de afín es a esa oferta y más información como salarios, de donde es la gente que ha trabaja ahí, nivel de satisfacción etc..
+La solución propuesta para resolver este problema es la creación de un sistema que recibirá una colección de libros con sus diferentes parámetros obtenidos de API's como [Google Books](https://developers.google.com/books/docs/v1/getting_started) o [Goodreads](https://www.goodreads.com/api) a partir de las cuales se podrá recuperar una gran cantidad de información (autor, editor, fecha de publicación, comentarios...) que le resultará de gran utilidad al lector.
 
 ### ¿ A quién beneficia?
 
  El sistema beneficiaría a:
 
- 1. Solicitantes de empleo, que podrán obtener una ofertas afines a sus cualidad y por lo tanto aumentar sus posibilidades de encontrar trabajo.
- 2. Plataformas de empleo. Cualquier plataforma de empleo que proporcione una API se verá beneficiada porque podrá aumentar su tráfico de usuarios a partir de este sistema.
- 3. Empresas. Las empresas obtendrán candidatos más afines a sus requerimientos gracias al sistema, simplificando y abaratando las tareas de reclutamiento.
+ 1. Usuarios lectores ya que podrán visualizar información relevante sobre una gran cantidad de libros, temáticas, autores, editores o fecha de publicación facilitando en gran medida el proceso de búsqueda.
+ 3. Empresas editoriales o administradores. Las editoriales o administradores podrán modificar o agregar información de manera sencilla e intuitiva sobre cualquier artículo.
 
 ### Nombre del proyecto
 
-PONER NOMBRE DEL PROYECTO
+ReadBook
 
 <a name="Additional"></a>
 ## Documentación Adicional
