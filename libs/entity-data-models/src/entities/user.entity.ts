@@ -1,10 +1,9 @@
 import { ApiProperty } from '@nestjs/swagger';
 import * as bcrypt from 'bcrypt';
-import { BeforeInsert, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { BeforeInsert, Column, Entity } from 'typeorm';
 import { crypt } from '../utils/encryptation';
 import { CrudEntity } from './crud.entity';
 import { Profile } from './profile.entity';
-
 
 export interface User {
   email: string;
@@ -14,8 +13,7 @@ export interface User {
 }
 
 @Entity()
-export class UserEntity extends CrudEntity implements User {
-
+export class User extends CrudEntity implements User {
   @ApiProperty({ example: 'Sergio' })
   @Column('varchar')
   name: string;
@@ -33,7 +31,7 @@ export class UserEntity extends CrudEntity implements User {
   surname: string;
 
   @ApiProperty({ example: 'Mesas' })
-  @Column('enum')
+  @Column('varchar')
   profile?: Profile;
 
   @BeforeInsert()
