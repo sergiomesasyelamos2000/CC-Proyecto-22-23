@@ -3,6 +3,7 @@ import * as bcrypt from 'bcrypt';
 import { BeforeInsert, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 import { crypt } from '../utils/encryptation';
 import { CrudEntity } from './crud.entity';
+import { Profile } from './profile.entity';
 
 
 export interface User {
@@ -30,6 +31,10 @@ export class UserEntity extends CrudEntity implements User {
   @ApiProperty({ example: 'Mesas' })
   @Column('varchar')
   surname: string;
+
+  @ApiProperty({ example: 'Mesas' })
+  @Column('enum')
+  profile?: Profile;
 
   @BeforeInsert()
   async hashPassword() {
