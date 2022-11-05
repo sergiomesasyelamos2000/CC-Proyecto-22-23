@@ -14,9 +14,4 @@ export class LogInDto {
     example: 'P@ssw0rd',
   })
   password: string;
-
-  constructor() {
-    this.email = null;
-    this.password = null;
-  }
 }
