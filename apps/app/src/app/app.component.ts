@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Message } from '@readbook/api-interfaces';
+import { Message } from 'libs/entity-data-models/src';
 
 @Component({
   selector: 'readbook-root',

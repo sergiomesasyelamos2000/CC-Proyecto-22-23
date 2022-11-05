@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { Message } from '@readbook/api-interfaces';
+import { Message } from 'libs/entity-data-models/src';
 
 @Injectable()
 export class AppService {
