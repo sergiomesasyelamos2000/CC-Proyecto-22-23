@@ -1,3 +1,27 @@
 export const environment = {
   production: false,
+  environment: 'DEV',
+  httpConfig: {
+    privateDomain: '0.0.0.0',
+    privatePort: 3000,
+    publicDomain: 'localhost',
+    publicPort: 3000,
+    httpsEnabled: false,
+    globalPrefix: 'api',
+    apiVersion: 'v1',
+    publicAssetsUrl: '',
+    publicApiUrl: '',
+  },
+  typeormConfig: {
+    softDelete: true,
+    logging: ['error', 'warn'],
+    type: 'mysql',
+    host: '127.0.0.1',
+    port: 3306,
+    username: 'root',
+    password: 'root',
+    database: 'readbook',
+    synchronize: true,
+    charset: 'utf8mb4',
+  },
 };

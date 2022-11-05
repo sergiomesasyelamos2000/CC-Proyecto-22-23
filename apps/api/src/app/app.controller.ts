@@ -1,6 +1,6 @@
 import { Controller, Get } from '@nestjs/common';
 
-import { Message } from '@readbook/api-interfaces';
+import { Message } from 'libs/entity-data-models/src';
 
 import { AppService } from './app.service';
 
