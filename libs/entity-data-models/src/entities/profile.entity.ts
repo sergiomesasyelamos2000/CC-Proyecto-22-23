@@ -13,20 +13,4 @@ export class Profile extends CrudEntity {
   @Column('enum')
   @IsArray()
   roles: ROLE_ENUM[];
-
-  @ApiProperty({ example: 'prueba@gmail.com' })
-  @Column('varchar')
-  email: string;
-
-  @ApiProperty({ example: 'Sergio' })
-  @Column('varchar')
-  name: string;
-
-  @ApiProperty({ example: 'Contrasena' })
-  @Column('varchar')
-  password: string;
-
-  @ApiProperty({ example: 'Mesas' })
-  @Column('varchar')
-  surname: string;
 }
