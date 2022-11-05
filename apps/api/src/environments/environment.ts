@@ -24,4 +24,7 @@ export const environment = {
     synchronize: true,
     charset: 'utf8mb4',
   },
+  criptography: {
+    passwordCryptoJS: 'sistemas',
+  },
 };
