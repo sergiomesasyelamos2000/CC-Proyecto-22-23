@@ -1,7 +1,7 @@
 export const environment = {
   production: false,
   environment: 'DEV',
-  httpConfig: {
+  /* httpConfig: {
     privateDomain: '0.0.0.0',
     privatePort: 3000,
     publicDomain: 'localhost',
@@ -11,20 +11,22 @@ export const environment = {
     apiVersion: 'v1',
     publicAssetsUrl: '',
     publicApiUrl: '',
-  },
+  }, */
   typeormConfig: {
-    softDelete: true,
-    logging: ['error', 'warn'],
     type: 'mysql',
-    host: '127.0.0.1',
-    port: 3306,
+    host: 'localhost',
+    port: '3306',
     username: 'root',
     password: 'root',
     database: 'readbook',
+    entities: ['dist/**/*.entity{.ts,.js}'],
     synchronize: true,
-    charset: 'utf8mb4',
   },
   criptography: {
     passwordCryptoJS: 'sistemas',
+  },
+  jwtConfig: {
+    secret: 'sistemas',
+    signOptions: { expiresIn: '3600s' },
   },
 };
