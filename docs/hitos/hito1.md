@@ -39,7 +39,8 @@ Posteriormente, se realizará una planificación del proyecto en diferentes _mil
 
 La estructura inicial del proyecto contendrá las siguientes clases o entindades:
 
-- Profile: Define el tipo de usuario que accede al sistema, pudiéndose tratar de un usuario administrador o un usuario lector. Se encuentra en el [fichero](libs/entity-data-models/src/entities/profile.entity.ts).
-- User: Posee la información de un usuario del sistema así como el tipo de usuario (_profile_) que posee. Se encuentra definida en el [fichero](libs/entity-data-models/src/entities/user.entity.ts).
-- Book: Guarda la inforamción referente a un libro junto con funcionalidades básicas.Se encuentra definida en el [fichero](libs/entity-data-models/src/entities/book.entity.ts).
-- Books: Guarda toda la información obtenida del archivo JSON además de funcionalidades básicas. Se encuentra definida en el [fichero](libs/entity-data-models/src/entities/crud.entity.ts).
+- **Profile**: Define el tipo de usuario que accede al sistema, pudiéndose tratar de un usuario administrador o un usuario lector. Se encuentra en el [fichero](/libs/entity-data-models/src/entities/profile.entity.ts).
+- **User**: Posee la información de un usuario del sistema así como el tipo de usuario (_profile_) que posee. Se encuentra definida en el [fichero](/libs/entity-data-models/src/entities/user.entity.ts).
+- **Book**: Guarda la inforamción referente a un libro junto con funcionalidades básicas.Se encuentra definida en el [fichero](/libs/entity-data-models/src/entities/book.entity.ts).
+- **Crud**: Guarda toda la información global que poseerá un objeto. Se encuentra definida en el [fichero](/libs/entity-data-models/src/entities/crud.entity.ts).
+<!-- - Books: Guarda toda la información obtenida del archivo JSON además de funcionalidades básicas. Se encuentra definida en el [fichero](/libs/entity-data-models/src/entities/crud.entity.ts). -->
