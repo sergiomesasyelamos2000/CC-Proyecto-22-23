@@ -35,6 +35,6 @@ El sistema beneficiaría a:
 
 - En el siguiente enlace se podrá acceder al [Hito 0](docs/hitos/hito0.md) donde se lleva a cabo toda la configuración y creación del repositorio así como del par de claves (pública y privda) y de la licencia empleada.
 
-## :pushpin: Descripción del problema a resolver y usos de git y GitHub:
+## :computer: Elaboración de código, HUs e hitos:
 
 - En el siguiente enlace se podrá acceder al [Hito 1](docs/hitos/hito1.md) donde se define la estructura inicial del proyecto, elaborando distintas historias de usuario e hitos con el objetivo de describir un producto mínimamente viable. Además, se lleva a cabo la implementación de alguna de las clases el proyecto.
