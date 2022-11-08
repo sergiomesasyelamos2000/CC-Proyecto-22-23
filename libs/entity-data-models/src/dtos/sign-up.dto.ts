@@ -4,7 +4,7 @@ export class SignUpDto {
   @ApiProperty({
     description: 'Email for entity user',
     type: String,
-    example: 'prueba@gmail.com',
+    example: 'pruebas@gmail.com',
   })
   email: string;
 
