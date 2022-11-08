@@ -3,7 +3,7 @@ import { ROLE_ENUM } from '../enums/role.enum';
 import { CrudEntity } from './crud.entity';
 
 /**
- * We save here private parameters of the user
+ * We save hersse private parameters of the user
  */
 @Entity()
 export class Profile extends CrudEntity {
