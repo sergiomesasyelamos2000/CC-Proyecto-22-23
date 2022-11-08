@@ -7,7 +7,7 @@
 - [Historias de usuario](#hus)
 - [Milestones](#milestones)
 - [Estructura inicial](#initialStructure)
-- [Justificación de los lenguajes](#framework)
+- [Justificación de los lenguajes y _frameworks_](#framework)
 
 <a name="hus"></a>
 
@@ -58,7 +58,7 @@ Además, se han definido diferentes clases de datos con el objetivo de especific
 
 ## Justificación de los lenguajes y _frameworks_
 
-TypeScript es un superconjunto de JavaScript, un lenguaje agregado estáticamente para componer código JavaScript sencillo que ofrece composición, clases e interfaz estáticas discrecionales, y se cree que tiene una mejor organización del código y procedimientos de programación organizados por objetos.
+EL lenguaje empleado para la realización del prpyecto será TypeScript. Este lenguaje es un superconjunto de JavaScript, un lenguaje agregado estáticamente para componer código JavaScript sencillo que ofrece composición, clases e interfaz estáticas discrecionales, y se cree que tiene una mejor organización del código y procedimientos de programación organizados por objetos.
 
 Además, para la parte del servidor se hará uso de NodeJS el cual es un entorno de tiempo de ejecución de JavaScript cuya idea principal es usar el modelo de entrada y salida sin bloqueo y controlado por eventos para seguir siendo liviano y eficiente frente a las aplicaciones en tiempo real de uso de datos que se ejecutan en los dispositivos.
 
@@ -72,7 +72,6 @@ Para la instalación de Angular se debe ejecutar el siguiente comando:
 
 ```
 npm install -g @angular/cli
-
 ```
 
 Por otro lado, NestJS es un _framework_ de NodeJS inspirado en Angular cuyo objetivo es crear fácilmente aplicaciones del lado del servidor eficientes y escalables. Está construido con TypeScript y le permite utilizar los conceptos de OOP (Programación Orientada a Objetos), FP (Programación Funcional) y FRP (Programación Reactiva Funcional), haciendo uso de herramientas como [Express](https://expressjs.com/) o [TypeORM](https://typeorm.io/).
@@ -81,19 +80,16 @@ Para la instalación de NestJS, en primer lugar se debe instalar NodeJS a travé
 
 ```
 sudo apt install nodejs
-
 ```
 
 Una vez instalado, se puede instalar la CLI de NestJS mediante la siguiente ejecución:
 
 ```
 npm install -g @nestjs/cli
-
 ```
 
 Por último, para la creación de la estrucutura del proyecto empleando estas tecnologías, se ha hecho uso del siguiente comando, seleccionando la combinación NestJS-Angular en las opciones de configuración:
 
 ```
 npx create-nx-workspace --preset=angular
-
 ```
