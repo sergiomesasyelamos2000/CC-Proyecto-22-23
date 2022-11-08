@@ -1,12 +1,10 @@
-## :rocket: Preparación inicial del entorno de trabajo :rocket: 
+## :rocket: Preparación inicial del entorno de trabajo :rocket:
 
 Este documento versa sobre los pasos a seguir para la correcta preparación del entorno de trabajo empleando las herramientas de git y GitHub, todo ello con el objetivo de utilziar de manera correcta los disintos repositorios y alcanzar los requirimientos necesarios para las diferentes entregas.
-
 
 ### Creación de los repositorios
 
 - [Fork del Repositorio de Cloud Computing 22-23](https://github.com/sergiomesasyelamos2000/CC-22-23): Fork realizado al repositorio de la asignatura de Cloud Computing a mi cuenta de GitHub.
-
 
 - [Repositorio del Proyecto](https://github.com/sergiomesasyelamos2000/CC-Proyecto-22-23): Repositorio que contiene el proyecto a desarrollar en la asignatura así como todos los elementos necesarios, entre ellos la licencia. En este caso, se ha seleccionado la licencia _MIT_ ya que implica una baja cantidad de limitaciones y permite su modificación.
 
@@ -15,12 +13,14 @@ Una vez realizado lo anterior, se puede clonar dicho repositorio desde GitHub a 
 ```
 $ git clone https://github.com/sergiomesasyelamos2000/CC-Proyecto-22-23
 ```
+
 ### Configuración de la cuenta personal de GitHub
+
 Con el objetivo de poder identificarnos de una mejor manera dentro de la plataforma, se ha añadido una imagen de perfil así como una descripción explicativa sobre nosotros y sobre el propio repositorio personal, facilitando con ello el seguimiento de este:
 
 ![profile](./img/profile.png)
-### Configuración de nombre y correo electrónico para que apareza en los commits
 
+### Configuración de nombre y correo electrónico para que apareza en los commits
 
 A continuación, se deberán asociar tanto un correo electrónico como un usuario a git, que nos identificará cuando se realizcen cambios en el repositorio. Para ello, deberemos hacer uso de los siguientes comandos:
 
@@ -34,6 +34,7 @@ Una vez realizado lo anterior, si empleamos el comando siguiente, podemos ver qu
 ```
 $ git config --list
 ```
+
 El resultado de la orden anterior es:
 
 ![config](./img/configList.png)
@@ -56,7 +57,7 @@ El comando anterior, nos arrojará el siguiente resultado, el cual nos informa q
 Además, se deben añadir las claves anteriormente generadas al agente _ssh_. Para ello, accederemos en como superadmiinistrador mediante el comando:
 
 ```
-$ sudo -s -H 
+$ sudo -s -H
 ```
 
 Acto seguido, iniciaremos el agente _ssh_ en segundo plano:
@@ -94,3 +95,5 @@ A continuación, con el objetivo de firmar las claves, nos pedirá la contraseñ
 Por otro lado, en cuanto a la configuración de la autenticación de dos factores, deberemos dirigirnos al apartado de _Settings_ > _Password and authentication_ y habilitar la sección _Two-factor authentication_. En este caso, se ha seleccionado el envío de un código a través de un mensaje de texto (SMS) como segunda forma de autenticación de GitHub.
 
 ![2FA](./img/2FA.png)
+
+<!-- B.-->
