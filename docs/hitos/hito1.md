@@ -1,6 +1,6 @@
 # Hito 1
 
-> Versión 0.1.0
+> Versión 1.0.0
 
 ## Contenidos
 
