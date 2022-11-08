@@ -3,9 +3,9 @@
  */
 export class JwtPayload {
   userId: string;
-  // Here we can add some other useful session parameters (E.G: some external uerId with an external API integration)
+  //  Here we can add some other useful session parameters (E.G: some external uerId with an external API integration)
 
   constructor() {
-    this.userId = null;
+    /* this.userId = null;*/
   }
 }
