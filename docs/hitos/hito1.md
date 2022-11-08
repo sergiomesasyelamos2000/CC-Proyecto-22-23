@@ -52,7 +52,7 @@ Además, se han definido diferentes clases de datos con el objetivo de especific
 - **GetUserDto**: Especifica los parámetros que empleará el usuario administrador para visualizar los datos de un usuario concreto.Se encuentra definida en el [fichero](/libs/entity-data-models/src/dtos/user-get.dto.ts).
 - **UpdateUserDto**: Especifica los parámetros que empleará el usuario para modificar sus datos personales. Se encuentra definida en el [fichero](/libs/entity-data-models/src/dtos/user-update.dto.ts).
 
-<!-- - Books: Guarda toda la información obtenida del archivo JSON además de funcionalidades básicas. Se encuentra definida en el [fichero](/libs/entity-data-models/src/entities/crud.entity.ts).-->
+<!-- Books: Guarda toda la información obtenida del archivo JSON además de funcionalidades básicas. Se encuentra definida en el [fichero](/libs/entity-data-models/src/entities/crud.entity.ts).-->
 
 <a name="framework"></a>
 
