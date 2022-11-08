@@ -76,7 +76,7 @@ npm install -g @angular/cli
 
 Por otro lado, NestJS es un _framework_ de NodeJS inspirado en Angular cuyo objetivo es crear fácilmente aplicaciones del lado del servidor eficientes y escalables. Está construido con TypeScript y le permite utilizar los conceptos de OOP (Programación Orientada a Objetos), FP (Programación Funcional) y FRP (Programación Reactiva Funcional), haciendo uso de herramientas como [Express](https://expressjs.com/) o [TypeORM](https://typeorm.io/).
 
-Para la instalación de NestJS, en primer lugar se debe instalar NodeJS a través del comando:
+Para la instalación de NestJS, en primer lugar se debe instalar a través del comando:
 
 ```
 sudo apt install nodejs
