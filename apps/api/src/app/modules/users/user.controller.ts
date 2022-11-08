@@ -247,4 +247,5 @@ export class UserController extends ControllerAbstract<User> {
       headers['Accept-Language']
     );
   }
+  /** */
 }
