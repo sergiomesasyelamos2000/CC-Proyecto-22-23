@@ -5,7 +5,7 @@ import { CrudEntity } from './crud.entity';
 /* export interface User {
   email: string;
   name: string;
-  password: string;
+  passw ord: string;
   surname: string;
 } */
 
