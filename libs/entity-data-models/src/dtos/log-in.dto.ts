@@ -4,7 +4,7 @@ export class LogInDto {
   @ApiProperty({
     description: 'Email for entity user',
     type: String,
-    example: 'hello@world.com',
+    example: 'hello@wosrld.com',
   })
   email: string;
 
