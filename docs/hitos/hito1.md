@@ -43,4 +43,12 @@ La estructura inicial del proyecto contendrá las siguientes clases o entindades
 - **User**: Posee la información de un usuario del sistema así como el tipo de usuario (_profile_) que posee. Se encuentra definida en el [fichero](/libs/entity-data-models/src/entities/user.entity.ts).
 - **Book**: Guarda la inforamción referente a un libro junto con funcionalidades básicas.Se encuentra definida en el [fichero](/libs/entity-data-models/src/entities/book.entity.ts).
 - **Crud**: Guarda toda la información global que poseerá un objeto. Se encuentra definida en el [fichero](/libs/entity-data-models/src/entities/crud.entity.ts).
+
+Además, se han definido diferentes clases de datos con el objetivo de especificar los parámetros concretos de distintas funcionalidades:
+
+- **LogInDto**: Especifica los parámetros que empleará el usuario para identificarse. Se encuentra en el [fichero](/libs/entity-data-models/src/dtos/log-in.dto.ts).
+- **SignUpDto**: Especifica los parámetros que empleará el usuario para registrarse en la aplicación. Se encuentra definida en el [fichero](/libs/entity-data-models/src/dtos/sign-up.dto.ts).
+- **GetUserDto**: Especifica los parámetros que empleará el usuario administrador para visualizar los datos de un usuario concreto.Se encuentra definida en el [fichero](/libs/entity-data-models/src/dtos/user-get.dto.ts).
+- **UpdateUserDto**: Especifica los parámetros que empleará el usuario para modificar sus datos personales. Se encuentra definida en el [fichero](/libs/entity-data-models/src/dtos/user-update.dto.ts).
+
 <!-- - Books: Guarda toda la información obtenida del archivo JSON además de funcionalidades básicas. Se encuentra definida en el [fichero](/libs/entity-data-models/src/entities/crud.entity.ts). -->
