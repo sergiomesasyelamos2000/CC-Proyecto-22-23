@@ -25,8 +25,7 @@ export class SignUpDto {
   @ApiProperty({
     description: 'Surname for entity user',
     type: String,
-    example: 'Mesas',
+    example: 'Mesa',
   })
   surname: string;
-
 }
