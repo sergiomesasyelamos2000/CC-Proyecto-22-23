@@ -1,6 +1,6 @@
+import { environment } from 'apps/api/src/environments/environment';
 import * as bcrypt from 'bcrypt';
 import * as CryptoJS from 'crypto-js';
-import {environment} from 'apps/api/src/environments/environment'
 export const buildFindOneOptions = (propertie: string) => {
   const propertieSplit = propertie.split(':');
   const propertieObject = {};
@@ -19,13 +19,14 @@ const hash = async (value) => {
 export const encryptPassword = (password: string): string => {
   return CryptoJS.AES.encrypt(
     password.trim(),
-    environment.criptography.passwordCryptoJS,
+    environment.criptography.passwordCryptoJS
   ).toString();
 };
 
 export const decryptPassword = (password: string): string => {
   return CryptoJS.AES.decrypt(
     password.trim(),
-    environment.criptography.passwordCryptoJS,
+    environment.criptography.passwordCryptoJS
   ).toString(CryptoJS.enc.Utf8);
 };
+/** */
