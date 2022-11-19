@@ -4,7 +4,7 @@ import { recoverAccessToken, removeAccessToken } from "../../shared/Utils";
 /**
  * Authentication service handles user access token
  * @class
- */
+ */ 
 @Injectable()
 export class AuthService {
   private _accessToken?: string;
