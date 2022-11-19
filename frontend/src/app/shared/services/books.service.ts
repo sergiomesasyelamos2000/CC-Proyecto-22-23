@@ -12,7 +12,7 @@ import { GetBookDto } from "../dtos/book/book-get.dto";
 import { BookService } from "src/app/book/book.service";
 import { ActivatedRoute, Router } from "@angular/router";
 
-@Injectable({
+@Injectable({ 
   providedIn: "root",
 })
 export class BooksService {
