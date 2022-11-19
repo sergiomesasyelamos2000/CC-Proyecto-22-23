@@ -4,7 +4,7 @@ import { JwtPayload } from 'shared/interface/jwt-payload.model';
 import { UserEntity } from 'src/modules/users/user.entity';
 import { UserService } from 'src/modules/users/user.service';
 import { buildFindOneOptions } from 'src/utilities/Utils';
-
+ 
 @Injectable()
 export class AuthService {
   constructor(

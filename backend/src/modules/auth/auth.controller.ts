@@ -26,7 +26,7 @@ import {
     description: 'App language',
   })
   @ApiTags('login')
-  @Controller(ApiUrls.API_URL_LOGIN)
+  @Controller(ApiUrls.API_URL_LOGIN) 
   export class AuthController {
     constructor(
       private authService: AuthService,

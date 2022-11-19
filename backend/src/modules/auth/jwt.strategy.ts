@@ -4,7 +4,7 @@ import { ExtractJwt, Strategy } from 'passport-jwt';
 import { JwtPayload } from 'shared/interface/jwt-payload.model';
 import { UserService } from 'src/modules/users/user.service';
 import { buildFindOneOptions } from 'src/utilities/Utils';
-
+ 
 @Injectable()
 export class JwtStrategy extends PassportStrategy(Strategy) {
   constructor(private userService: UserService) {
