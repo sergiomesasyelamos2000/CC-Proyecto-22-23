@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { GetBookDto } from 'src/app/shared/dtos/book/book-get.dto';
 
-/**
+/** 
  * Generic component to show book data using a GetBookDto as data source
  * @see {@link book-get.dto}
  */
