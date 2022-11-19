@@ -3,7 +3,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/auth/service/auth.service';
 /**
- * Navbar component used to show menu
+ * Navbar component used to show menu 
  */
 @Component({
   selector: 'app-navbar',
