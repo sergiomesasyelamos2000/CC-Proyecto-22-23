@@ -11,5 +11,5 @@ export class BookService extends CrudService<BookEntity> {
     private readonly booksRepository: Repository<BookEntity>,
   ) {
     super(booksRepository);
-  }
+  } 
 } 
