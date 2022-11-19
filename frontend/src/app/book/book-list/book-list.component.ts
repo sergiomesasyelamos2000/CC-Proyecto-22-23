@@ -8,7 +8,7 @@ import { BookService } from "../book.service";
  * Component to show all book list using component BookRow
  * @see {@link book-row.component}
  */
-
+ 
 @Component({
   selector: "app-book-list",
   templateUrl: "./book-list.component.html",

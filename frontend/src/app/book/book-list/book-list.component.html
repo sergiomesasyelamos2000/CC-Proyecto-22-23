@@ -28,39 +28,6 @@
           </div>
         </div>
       </div>
-
-      <!-- <div class="table-responsive">
-      <table class="table mt-3 fadeIn faster">
-        <thead class="table-dark">
-          <tr>
-            <th scope="col">ID</th>
-            <th scope="col">ISBN</th>
-            <th scope="col">Nombre</th>
-            <th scope="col">Categoría</th>
-            <th scope="col">Descripción</th>
-            <th scope="col">Fecha de publicación</th>
-            <th scope="col">Editores</th>
-            <th scope="col">Autores</th>
-            <th scope="col">Herramientas</th>
-          </tr>
-        </thead>
-        <tbody text-align="center">
-          <tr *ngFor="let book of booksList; let i = index">
-            <th scope="row">{{i + 1}}</th>
-            <td>{{ book?.ISBN }}</td>
-            <td>{{ book?.name }}</td>
-            <td>{{ book?.type }}</td>
-            <td>{{ book?.description }}</td>
-            <td>{{ book?.publicationDate }}</td>
-            <td>{{ book?.editors }}</td>
-            <td>{{ book?.autors }}</td>
-            <td>
-              <app-book-row [book]="book" (showEmmiter)="showBookDetail($event)" (deleteEmmiter)="deleteBook($event)">
-              </app-book-row>
-            </td>
-          </tr>
-        </tbody>
-      </table> -->
     </div>
   </div>
 </div>
