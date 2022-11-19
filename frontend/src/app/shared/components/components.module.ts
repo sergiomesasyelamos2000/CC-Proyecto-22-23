@@ -7,16 +7,13 @@ import { SharedModule } from '../shared.module';
 import { ButtonComponent } from './button/button.component';
 import { InputComponent } from './input/input.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { PeliculasPosterGridComponent } from './peliculas-poster-grid/peliculas-poster-grid.component';
-import { SlideshowComponent } from './slideshow/slideshow.component';
+
 
 @NgModule({
   declarations: [
     InputComponent,
     ButtonComponent,
     NavbarComponent,
-    SlideshowComponent,
-    PeliculasPosterGridComponent,
   ],
   imports: [
     CommonModule,
@@ -30,8 +27,7 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
     InputComponent,
     ButtonComponent,
     NavbarComponent,
-    SlideshowComponent,
-    PeliculasPosterGridComponent,
+
     FormsModule,
     ReactiveFormsModule,
   ],
