@@ -10,4 +10,4 @@ import { SignUpComponent } from './sign-up.component';
   imports: [CommonModule, SharedModule, ComponentsModule, MaterialModule],
   exports: [SignUpComponent],
 })
-export class SignUpModule {}
+export class SignUpModule {} 

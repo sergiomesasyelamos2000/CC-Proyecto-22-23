@@ -11,7 +11,7 @@ import { resetFrom } from '../shared/Utils';
 import { UserService } from '../user/user.service';
 
 /**
- * Allows user registration
+ * Allows user registration 
  */
 @Component({
   selector: 'app-sign-up',
