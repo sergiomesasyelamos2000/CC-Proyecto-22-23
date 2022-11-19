@@ -4,7 +4,7 @@ import { InputType } from '../../enums/input-type.enum';
 import { InputModel } from './model/input.model';
 
 /**
- * Generic component to instanciate an input element using an InputModel as a template
+ * Generic component to instanciate an input element using an InputModel as a template 
  * @see {@link inputModel}
  */
 @Component({
