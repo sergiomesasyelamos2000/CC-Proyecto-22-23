@@ -6,7 +6,7 @@ import { CrudException } from '../error/type/CrudException';
 
 /**
  * Generic service to implement crud functions
- * @template T type of entity handled by service
+ * @template T type of entity handled by service 
  */
 export class CrudService<T> implements CrudServiceAbstract<T> {
   private apiUrl: string = environment.url.api.base;
