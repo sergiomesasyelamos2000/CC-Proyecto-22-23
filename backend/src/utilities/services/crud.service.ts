@@ -14,7 +14,7 @@ export class CrudService<T> implements ServiceAbstract<T> {
   }
   async create(newEntry: any): Promise<T> {
     const newInstance: T = newEntry as T;
-    return await this.repository.save(newInstance);
+    return await this.repository.save(newInstance); 
   }
   async delete(id: number): Promise<any> {
     return await this.repository.delete(id);
