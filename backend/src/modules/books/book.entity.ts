@@ -5,7 +5,7 @@ import { crypt } from 'src/utilities/Utils';
 import { BeforeInsert, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
-export class BookEntity implements Book { 
+export class BookEntity implements Book {  
   @ApiProperty({ example: '1234' })
   @PrimaryGeneratedColumn("uuid")
   id: string;
