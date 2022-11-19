@@ -60,7 +60,7 @@ export class InputService {
     };
   }
 
-  /**
+  /** 
    * @return {InputModel} ISBN input model
    */
    public getISBNInput(formControl: FormControl): InputModel {
