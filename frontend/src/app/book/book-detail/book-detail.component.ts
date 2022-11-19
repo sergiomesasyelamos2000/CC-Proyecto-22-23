@@ -12,7 +12,7 @@ import { encrypt } from 'src/app/shared/Utils';
 import { environment } from 'src/environments/environment';
 import { BookService } from '../book.service';
 
-/**
+/** 
  * Component to show book selected info and updated
  */
 @Component({
