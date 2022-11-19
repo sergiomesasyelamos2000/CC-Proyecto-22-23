@@ -13,3 +13,4 @@ export class BookService extends CrudService<BookEntity> {
     super(booksRepository);
   } 
 } 
+ 
