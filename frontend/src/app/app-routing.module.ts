@@ -9,7 +9,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { UserDetailComponent } from './user/user-detail/user-detail.component';
 import { UserListComponent } from './user/user-list/user-list.component';
-import { HomeComponent } from './home/home.component';
 import { BookListComponent } from './book/book-list/book-list.component';
 import { BookDetailComponent } from './book/book-detail/book-detail.component';
 import { BuscarComponent } from './buscar/buscar.component';
@@ -54,11 +53,6 @@ const routes: Routes = [
     path: 'buscar/:termino',
     component: BuscarComponent,
     canLoad: [AuthGuard],
-  },
-  {
-    path: 'home',
-    component: HomeComponent,
-    canActivate: [AuthGuard],
   },
   {
     path: '',

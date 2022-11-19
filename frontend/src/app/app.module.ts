@@ -8,7 +8,6 @@ import { AuthInterceptor } from './auth/interceptor/auth.interceptor';
 import { AuthService } from './auth/service/auth.service';
 import { BookModule } from './book/book.module';
 import { BuscarComponent } from './buscar/buscar.component';
-import { HomeComponent } from './home/home.component';
 import { LoginModule } from './login/login.module';
 import { LogoutComponent } from './logout/logout.component';
 import { NotFoundComponent } from './not-found/not-found.component';
@@ -32,7 +31,7 @@ import { UserModule } from './user/user.module';
     GlobalExceptionHandler,
     { provide: ErrorHandler, useClass: GlobalExceptionHandler },
   ],
-  declarations: [AppComponent, NotFoundComponent, LogoutComponent, HomeComponent, BuscarComponent], 
+  declarations: [AppComponent, NotFoundComponent, LogoutComponent, BuscarComponent], 
   imports: [
     LoginModule,
     UserModule,
