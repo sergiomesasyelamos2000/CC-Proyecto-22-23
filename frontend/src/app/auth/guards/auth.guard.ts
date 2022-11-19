@@ -10,7 +10,7 @@ import { Observable } from "rxjs";
 import { environment } from "src/environments/environment";
 import { AuthService } from "../service/auth.service";
 /**
- * Guardian for check if user is logged else redirects
+ * Guardian for check if user is logged else redirects 
  * @class
  */
 @Injectable({

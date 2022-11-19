@@ -9,7 +9,7 @@ import { Observable } from "rxjs";
 import { AuthService } from "../service/auth.service";
 
 /**
- * Guardian for check if user is logged in
+ * Guardian for check if user is logged in 
  * @class
  */
 @Injectable()
