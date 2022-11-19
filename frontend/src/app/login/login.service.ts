@@ -9,7 +9,7 @@ import { CrudException } from '../shared/error/type/CrudException';
 /**
  * Service for login.component
  * @see {@link login.component}
- * @class
+ * @class 
  */
 @Injectable({
   providedIn: 'root',
