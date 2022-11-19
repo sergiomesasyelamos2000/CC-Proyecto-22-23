@@ -48,7 +48,7 @@ import { BookService } from './book.service';
     }
   
     @ApiConsumes('application/json')
-    @ApiOkResponse({
+    @ApiOkResponse({ 
       status: 200,
       description: 'Get all books was successfully completed',
       type: [BookEntity],
