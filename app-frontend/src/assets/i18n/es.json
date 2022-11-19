@@ -1,0 +1,76 @@
+{
+  "button": {
+    "login": "Iniciar sesión",
+    "sign_up": "Registrarse",
+    "go_to_login": "Volver a Iniciar sesión",
+    "update_user": "Actualizar usuario",
+    "update_book": "Actualizar libro"
+  },
+  "error": {
+    "database": {
+      "generic": "Error al realizar la acción {{action}} para {{type}}",
+      "propertie": "Error al realizar la acción {{action}} para {{type}} con {{propertie_name}} {{propertie_value}}",
+      "type": {
+        "user": "Usuario",
+        "book": "Libro"
+      },
+      "action": {
+        "create": "CREATE",
+        "delete": "DELETE",
+        "get": "GET",
+        "update": "UPDATE"
+      }
+    },
+    "login": {
+      "generic": "Error al intentar iniciar sesión"
+    }
+  },
+  "input": {
+    "label": {
+      "email": "Correo eléctronico",
+      "password": "Contraseña",
+      "name": "Nombre",
+      "search": "Buscar...",
+      "surname": "Apellido",
+      "ISBN": "ISBN",
+      "type": "Categoría",
+      "description": "Descripción",
+      "publicationDate": "Fecha de publicación",
+      "editors": "Editores",
+      "autors": "Autores",
+      "photo": "Imagen"
+    },
+    "placeholder": {
+      "email": "Introduce tu correo eléctronico",
+      "password": "Introduce tu contraseña",
+      "name": "Introduce tu nombre",
+      "surname": "Introduce tu apellido",
+      "ISBN": "ISBN",
+      "type": "Categoría",
+      "description": "Descripción",
+      "publicationDate": "Fecha de publicación",
+      "editors": "Editores",
+      "autors": "Autores",
+      "photo": "Imagen"
+    }
+  },
+  "page_not_found": {
+    "title": "Página no encontrada 404"
+  },
+  "logout": {
+    "title": "Has cerrado sesión o ha caducado"
+  },
+  "success": {
+    "database": {
+      "generic": {
+        "user": "El usuario ha sido {{action}} con éxito",
+        "book": "El libro ha sido {{action}} con éxito"
+      },
+      "action": {
+        "created": "creado",
+        "delete": "eliminado",
+        "update": "actulizado"
+      }
+    }
+  }
+}
