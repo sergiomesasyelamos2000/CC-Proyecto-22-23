@@ -6,15 +6,6 @@ import * as books from "./books.json";
 
 @Injectable()
 export class PopulatorBooksService {
-  /* books: BookEntity[] = [
-    {
-      name: 'Excelsia',
-    },
-    {
-      name: 'Petit Celler',
-    },
-  ]; */
-
   constructor(
     @InjectRepository(BookEntity)
     private booksRepository: Repository<BookEntity>
