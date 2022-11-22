@@ -78,7 +78,7 @@ Siguiendo la metodología ágil, el hecho de que Cypress se base puramente en Ja
 
 Un ejemplo de test escribo haciendo uso de Cypress puede ser:
 
-<img src="https://www.cypress.io/static/04aa63db5162e7cb73e0538240963522/writing-tests.webm" alt="drawing" width="300"/>
+<video src="https://www.cypress.io/static/04aa63db5162e7cb73e0538240963522/writing-tests.webm" alt="drawing" width="300"></video>
 
 Mientras que la ejecución de las pruebas a través del navegador se muestra de la siguiente manera:
 
