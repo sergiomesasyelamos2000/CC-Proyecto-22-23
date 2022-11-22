@@ -69,21 +69,21 @@ Se ha llevado a cabo la implementación de la migración de libros hacia nuestra
 
 ## Documentación asociada a los gestores de tareas
 
-Se ha realizado la documentación del gestor de tareas empleado así como sus ventajas. Se puede leer la documentación [aquí](https://github.com/sergiomesasyelamos2000/CC-Proyecto-22-23/blob/hito-2/docs/hitos/hito2/hito2-1.md)
+Se ha realizado la documentación del gestor de tareas empleado así como sus ventajas. Se puede leer la documentación [aquí](docs/hitos/hito2/hito2-1.md)
 
 
 <a name="frameworks"></a>
 
 ## Documentación asociada a los marcos de trabajo para pruebas
 
-Se ha realizado la documentación de los marcos de trabajo para pruebas empleados tanto en la parte backend de la aplicación como en la parte frontend. Se puede leer la documentación [aquí](https://github.com/sergiomesasyelamos2000/CC-Proyecto-22-23/blob/hito-2/docs/hitos/hito2/hito2-2.md)
+Se ha realizado la documentación de los marcos de trabajo para pruebas empleados tanto en la parte backend de la aplicación como en la parte frontend. Se puede leer la documentación [aquí](docs/hitos/hito2/hito2-2.md)
 
 
 <a name="librerias"></a>
 
 ## Documentación asociada a las librerías de aserciones
 
-Se ha realizado la documentación de las librerías de aserciones empleados tanto en la parte backend de la aplicación como en la parte frontend. Se puede leer la documentación [aquí](https://github.com/sergiomesasyelamos2000/CC-Proyecto-22-23/blob/hito-2/docs/hitos/hito2/hito2-3.md)
+Se ha realizado la documentación de las librerías de aserciones empleados tanto en la parte backend de la aplicación como en la parte frontend. Se puede leer la documentación [aquí](docs/hitos/hito2/hito2-3.md)
 
 
 <a name="test1"></a>
@@ -93,7 +93,7 @@ Se ha realizado la documentación de las librerías de aserciones empleados tant
 Se han desarrollado diferentes tests unitarios para la comprobación de las distintas funcionalidades implementadas hasta el momento.
 El desarrollo de los tests relacionados con Jest pueden visualziarse en el siguiente _issue_ [#57](https://github.com/sergiomesasyelamos2000/CC-Proyecto-22-23/issues/57).
 
-Además, [aquí](/hito2-4-1.md) podrás encontrar los tests realizados en esta sección.
+Además, [aquí](docs/hitos/hito2/hito2-4-1.md) podrás encontrar los tests realizados en esta sección.
 
 <a name="test11"></a>
 
@@ -130,7 +130,7 @@ Ran all test suites.
 Se han desarrollado diferentes tests unitarios para la comprobación de las distintas funcionalidades implementadas hasta el momento.
 El desarrollo de los tests relacionados con Cypress pueden visualziarse en el siguiente _issue_ [#58](https://github.com/sergiomesasyelamos2000/CC-Proyecto-22-23/issues/58).
 
-Además, [aquí](/hito2-4-2.md) podrás encontrar los tests realizados en esta sección.
+Además, [aquí](docs/hitos/hito2/hito2-4-2.md) podrás encontrar los tests realizados en esta sección.
 
 <a name="test22"></a>
 
@@ -144,13 +144,13 @@ npm run cypress:open
 
 Obteniendo los siguientes resultados:
 
-<img src="https://github.com/sergiomesasyelamos2000/CC-Proyecto-22-23/blob/hito-2/docs/img/testCypress.png" alt="drawing" width="300"/>
+<img src="./docs/img/testCypress.png" alt="drawing" width="300"/>
 
 <a name="info"></a>
 
 ## Información adicional
 
-Si desear encontrar información adicional referente a la configuación del gestor de tareas así como de los tests pusla [aquí]().
+Si desear encontrar información adicional referente a la configuación del gestor de tareas así como de los tests pusla [aquí](docs/hitos/hito2/hito2-4-3.md).
 
 
 

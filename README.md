@@ -38,3 +38,7 @@ El sistema beneficiaría a:
 ## :computer: Elaboración de código, HUs e hitos:
 
 - En el siguiente enlace se podrá acceder al [Hito 1](docs/hitos/hito1.md) donde se define la estructura inicial del proyecto, elaborando distintas historias de usuario e hitos con el objetivo de describir un producto mínimamente viable. Además, se lleva a cabo la implementación de alguna de las clases el proyecto.
+
+## :pencil2: Elaboración de código, HUs e hitos:
+
+- En el siguiente enlace se podrá acceder al [Hito 2](docs/hitos/hito2/hito2.md) donde se define la elección y configuración del gestor de tareas, el uso de la biblioteca de aserciones así como el marco de pruebas empleado. Además, se proporciona diferente información como los tests unitarios realizados y su correspondencia con el avance de código.
