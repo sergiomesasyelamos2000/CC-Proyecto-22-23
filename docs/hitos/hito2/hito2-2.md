@@ -78,8 +78,26 @@ Siguiendo la metodología ágil, el hecho de que Cypress se base puramente en Ja
 
 Un ejemplo de test escribo haciendo uso de Cypress puede ser:
 
-<video src="https://www.cypress.io/static/04aa63db5162e7cb73e0538240963522/writing-tests.webm" alt="drawing" width="300"></video>
+```
+describe('My First Test', () => {
+  it('Gets, types and asserts', () => {
+    cy.visit('https://example.cypress.io')
+
+    cy.contains('type').click()
+
+    // Should be on a new URL which
+    // includes '/commands/actions'
+    cy.url().should('include', '/commands/actions')
+
+    // Get an input, type into it and verify
+    // that the value has been updated
+    cy.get('.action-email')
+      .type('fake@email.com')
+      .should('have.value', 'fake@email.com')
+  })
+})
+```
 
 Mientras que la ejecución de las pruebas a través del navegador se muestra de la siguiente manera:
 
-<img src="https://www.cypress.io/static/b41dcbfd4091eb59816bdec77f01c1b9/running-tests.webm" alt="drawing" width="300"/>
+<img src="" alt="drawing" width="300"/>
