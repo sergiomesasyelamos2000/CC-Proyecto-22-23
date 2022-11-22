@@ -50,7 +50,7 @@ A su vez, se ha desarrollado el módoulo para la gestión de la autenticación d
 
 ## Creación del módulo de libros
 
-Se ha llevado a cabo la implementación del módulo de libros cuya estructura se puede encontrar [aquí](./../../backend/src/modules/books/book.entity.ts). El desarrollo asociado a esta sección puede encontrarse en los siguientes _issues_:
+Se ha llevado a cabo la implementación del módulo de libros cuya estructura se puede encontrar [aquí](./../../../backend/src/modules/books/book.entity.ts). El desarrollo asociado a esta sección puede encontrarse en los siguientes _issues_:
 
 - [#39](https://github.com/sergiomesasyelamos2000/CC-Proyecto-22-23/issues/39)
 
@@ -144,7 +144,7 @@ npm run cypress:open
 
 Obteniendo los siguientes resultados:
 
-<img src="./../docs/img/testCypress.png" alt="drawing" width="300"/>
+<img src="./../../img/testCypress.png" alt="drawing" width="300"/>
 
 <a name="info"></a>
 
