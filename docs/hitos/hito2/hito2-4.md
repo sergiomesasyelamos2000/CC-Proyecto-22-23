@@ -152,5 +152,7 @@ Obteniendo los siguientes resultados:
 
 Si desear encontrar información adicional referente a la configuación del gestor de tareas así como de los tests pusla [aquí](hito2-4-3.md).
 
+Además, se han cerrado los _issues_ correspondientes a la [HU1 - Como usuario quiero poder buscar libros por su nombre](https://github.com/sergiomesasyelamos2000/CC-Proyecto-22-23/issues/2) y la [HU2 - Como usuario quiero obtener diferente información sobre un libro a través del título](https://github.com/sergiomesasyelamos2000/CC-Proyecto-22-23/issues/3), englobadas dentro del [Milestone 1](https://github.com/sergiomesasyelamos2000/CC-Proyecto-22-23/milestone/2).
+
 
 
