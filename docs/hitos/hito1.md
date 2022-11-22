@@ -40,17 +40,16 @@ Posteriormente, se realizará una planificación del proyecto en diferentes _mil
 
 La estructura inicial del proyecto contendrá las siguientes clases o entindades:
 
-- **Profile**: Define el tipo de usuario que accede al sistema, pudiéndose tratar de un usuario administrador o un usuario lector. Se encuentra en el [fichero](/libs/entity-data-models/src/entities/profile.entity.ts).
-- **User**: Posee la información de un usuario del sistema así como el tipo de usuario (_profile_) que posee. Se encuentra definida en el [fichero](/libs/entity-data-models/src/entities/user.entity.ts).
-- **Book**: Guarda la inforamción referente a un libro junto con funcionalidades básicas.Se encuentra definida en el [fichero](/libs/entity-data-models/src/entities/book.entity.ts).
-- **Crud**: Guarda toda la información global que poseerá un objeto. Se encuentra definida en el [fichero](/libs/entity-data-models/src/entities/crud.entity.ts).
+- **Profile**: Define el tipo de usuario que accede al sistema, pudiéndose tratar de un usuario administrador o un usuario lector. Se encuentra en el [fichero](./../../backend/src/modules/users/profile.entity.ts).
+- **User**: Posee la información de un usuario del sistema así como el tipo de usuario (_profile_) que posee. Se encuentra definida en el [fichero](./../../backend/src/modules/users/user.entity.ts).
+- **Book**: Guarda la inforamción referente a un libro junto con funcionalidades básicas.Se encuentra definida en el [fichero](./../../backend/src/modules/books/book.entity.ts).
 
 Además, se han definido diferentes clases de datos con el objetivo de especificar los parámetros concretos de distintas funcionalidades:
 
-- **LogInDto**: Especifica los parámetros que empleará el usuario para identificarse. Se encuentra en el [fichero](/libs/entity-data-models/src/dtos/log-in.dto.ts).
-- **SignUpDto**: Especifica los parámetros que empleará el usuario para registrarse en la aplicación. Se encuentra definida en el [fichero](/libs/entity-data-models/src/dtos/sign-up.dto.ts).
-- **GetUserDto**: Especifica los parámetros que empleará el usuario administrador para visualizar los datos de un usuario concreto.Se encuentra definida en el [fichero](/libs/entity-data-models/src/dtos/user-get.dto.ts).
-- **UpdateUserDto**: Especifica los parámetros que empleará el usuario para modificar sus datos personales. Se encuentra definida en el [fichero](/libs/entity-data-models/src/dtos/user-update.dto.ts).
+- **LogInDto**: Especifica los parámetros que empleará el usuario para identificarse. Se encuentra en el [fichero](./../../backend/shared/dtos/user/user-login.dto.ts).
+- **SignUpDto**: Especifica los parámetros que empleará el usuario para registrarse en la aplicación. Se encuentra definida en el [fichero](./../../backend/shared/dtos/user/user-create.dto.ts).
+- **GetUserDto**: Especifica los parámetros que empleará el usuario administrador para visualizar los datos de un usuario concreto.Se encuentra definida en el [fichero](./../../backend/shared/dtos/user/user-get.dto.ts).
+- **UpdateUserDto**: Especifica los parámetros que empleará el usuario para modificar sus datos personales. Se encuentra definida en el [fichero](./../../backend/shared/dtos/user/user-update.dto.ts).
 
 <!-- Books: Guarda toda la información obtenida del archivo JSON además de funcionalidades básicas. Se encuentra definida en el [fichero](/libs/entity-data-models/src/entities/crud.entity.ts).-->
 
@@ -74,6 +73,37 @@ Para la instalación de Angular se debe ejecutar el siguiente comando:
 npm install -g @angular/cli
 ```
 
+A continuación, para la creación de la estrucutra frontend nuestra aplicación haremos uso de la CLI de Angular mediante el comando:
+
+```
+ng new frontend
+```
+Algunos de los comandos más relevantes a destacar son:
+
+* Creación de un nuevo componente: 
+
+```
+ng generate component nuevoComponente
+```
+
+* Creación de un nuevo servicio: 
+
+```
+ng generate service miServicio
+```
+
+* Creación de una nueva clase: 
+
+```
+ng generate class miClase
+```
+
+* Creación de una nueva interfaz: 
+
+```
+ng generate interface miInterface
+```
+
 Por otro lado, NestJS es un _framework_ de NodeJS inspirado en Angular cuyo objetivo es crear fácilmente aplicaciones del lado del servidor eficientes y escalables. Está construido con TypeScript y le permite utilizar los conceptos de OOP (Programación Orientada a Objetos), FP (Programación Funcional) y FRP (Programación Reactiva Funcional), haciendo uso de herramientas como [Express](https://expressjs.com/) o [TypeORM](https://typeorm.io/).
 
 Para la instalación de NestJS, en primer lugar se debe instalar a través del comando:
@@ -88,8 +118,8 @@ Una vez instalado, se puede instalar la CLI de NestJS mediante la siguiente ejec
 npm install -g @nestjs/cli
 ```
 
-Por último, para la creación de la estrucutura del proyecto empleando estas tecnologías, se ha hecho uso del siguiente comando, seleccionando la combinación NestJS-Angular en las opciones de configuración:
+Además, para la creación de la estrucutra backend de la API de nuestro sistema haremos uso de la CLI de NestJS mediante el comando:
 
 ```
-npx create-nx-workspace --preset=angular
+nest new backend
 ```
