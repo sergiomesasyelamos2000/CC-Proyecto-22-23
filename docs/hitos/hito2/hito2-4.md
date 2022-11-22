@@ -9,9 +9,9 @@
 - [Documentación asociada a los gestores de tareas](#gestores)
 - [Documentación asociada a los marcos de trabajo para pruebas](#frameworks)
 - [Documentación asociada a las librerías de aserciones](#librerias)
-- [Desarrollo de tests unitarios para los controladores _Book_ y _User_] (#test1)
+- [Desarrollo de tests unitarios para los controladores _Book_ y _User_](#test1)
     - [Resultados obtenidos en la ejecución de los tests de Jest](#test11)
-- [Desarrollo de tests unitarios para las vistas _Book_ y _User_] (#test2)
+- [Desarrollo de tests unitarios para las vistas _Book_ y _User_](#test2)
     - [Resultados obtenidos en la ejecución de los tests de Cypress](#test22)
 
 <a name="crudBooks"></a>
@@ -110,13 +110,13 @@ Obteniendo los siguientes resultados:
 > jest
 
  PASS  src/app.controller.spec.ts (11.834 s)
- PASS  src/modules/books/book.controller.spec.ts
- PASS  src/modules/users/user.controller.spec.ts
+ PASS  src/modules/books/book.controller.spec.ts (10.432 s)
+ PASS  src/modules/users/user.controller.spec.ts (11.121 s)
 
 Test Suites: 0 failed, 3 passed, 3 total
 Tests:       3 passed, 3 total
 Snapshots:   0 total
-Time:        14.335 s, estimated 16 s
+Time:        33.335 s, estimated 35 s
 Ran all test suites.
 ```
 
