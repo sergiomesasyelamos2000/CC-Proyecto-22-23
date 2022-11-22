@@ -8,7 +8,7 @@ import { BookService } from "../book.service";
  * Component to show all book list using component BookRow
  * @see {@link book-row.component}
  */
- 
+
 @Component({
   selector: "app-book-list",
   templateUrl: "./book-list.component.html",
@@ -19,11 +19,11 @@ export class BookListComponent {
   @Input() books: any = {};
   @Input() id: number;
 
-    /*Con el @Output pondremos el parámetro que queremos que el padre esté escuchando */
-    @Output() bookSeleccionado: EventEmitter<number>;
+  /*Con el @Output pondremos el parámetro que queremos que el padre esté escuchando */
+  @Output() bookSeleccionado: EventEmitter<number>;
 
   public booksListObservable: Observable<GetBookDto[]> =
-  this.bookService.findAll();
+    this.bookService.findAll();
   public booksList: GetBookDto[] = [];
 
   constructor(
@@ -39,10 +39,9 @@ export class BookListComponent {
    * @param id book id
    * @see {@link book-detail.component}
    */
-   public showBookDetail(id?: string): void {
-    this.router.navigate(['book', id]);
+  public showBookDetail(id?: string): void {
+    this.router.navigate(["book", id]);
   }
-
 
   /**
    * Delete book from db and updates book list
