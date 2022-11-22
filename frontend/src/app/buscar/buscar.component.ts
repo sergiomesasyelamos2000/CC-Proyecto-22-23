@@ -16,11 +16,6 @@ export class BuscarComponent implements OnInit {
   termino: string;
   books: GetBookDto[] = [];
 
-  /*  private bookName = '';
-  private originalBook?: any;
-  public book?: Book;
-  public booksList: GetBookDto[] = []; */
-
   public idBook: string;
   public booksListObservable: Observable<GetBookDto[]> =
     this.bookService.findAll();
