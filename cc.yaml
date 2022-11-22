@@ -8,4 +8,4 @@ test:
   - backend/src/app.controller.spec.ts
 fichero_tareas: 
   - frontend/package.json
-  - backend/package.json 
+  - backend/package.json   
