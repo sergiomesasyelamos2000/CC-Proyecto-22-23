@@ -13,6 +13,7 @@
     - [Resultados obtenidos en la ejecución de los tests de Jest](#test11)
 - [Desarrollo de tests unitarios para las vistas _Book_ y _User_](#test2)
     - [Resultados obtenidos en la ejecución de los tests de Cypress](#test22)
+- [Información adicional](#info)
 
 <a name="crudBooks"></a>
 
@@ -92,6 +93,8 @@ Se ha realizado la documentación de las librerías de aserciones empleados tant
 Se han desarrollado diferentes tests unitarios para la comprobación de las distintas funcionalidades implementadas hasta el momento.
 El desarrollo de los tests relacionados con Jest pueden visualziarse en el siguiente _issue_ [#57](https://github.com/sergiomesasyelamos2000/CC-Proyecto-22-23/issues/57).
 
+Además, [aquí](/hito2-4-1.md) podrás encontrar los tests realizados en esta sección.
+
 <a name="test11"></a>
 
 ### Resultados obtenidos en la ejecución de los tests de Jest
@@ -127,6 +130,8 @@ Ran all test suites.
 Se han desarrollado diferentes tests unitarios para la comprobación de las distintas funcionalidades implementadas hasta el momento.
 El desarrollo de los tests relacionados con Cypress pueden visualziarse en el siguiente _issue_ [#58](https://github.com/sergiomesasyelamos2000/CC-Proyecto-22-23/issues/58).
 
+Además, [aquí](/hito2-4-2.md) podrás encontrar los tests realizados en esta sección.
+
 <a name="test22"></a>
 
 ### Resultados obtenidos en la ejecución de los tests de Cypress
@@ -140,5 +145,12 @@ npm run cypress:open
 Obteniendo los siguientes resultados:
 
 <img src="https://github.com/sergiomesasyelamos2000/CC-Proyecto-22-23/blob/hito-2/docs/img/testCypress.png" alt="drawing" width="300"/>
+
+<a name="info"></a>
+
+## Información adicional
+
+Si desear encontrar información adicional referente a la configuación del gestor de tareas así como de los tests pusla [aquí]().
+
 
 
