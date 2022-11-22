@@ -1,0 +1,11 @@
+lenguaje: typescript
+test: 
+  - frontend/cypress/e2e/auth.spec.cy.ts
+  - frontend/cypress/e2e/book.spec.cy.ts
+  - frontend/cypress/e2e/test.spec.cy.ts
+  - backend/src/modules/books/book.controller.spec.ts
+  - backend/src/modules/users/user.controller.spec.ts
+  - backend/src/app.controller.spec.ts
+fichero_tareas: 
+  - frontend/package.json
+  - backend/package.json
