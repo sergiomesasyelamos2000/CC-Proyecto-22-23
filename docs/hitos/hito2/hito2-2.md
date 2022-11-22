@@ -100,4 +100,4 @@ describe('My First Test', () => {
 
 Mientras que la ejecución de las pruebas a través del navegador se muestra de la siguiente manera:
 
-<img src="" alt="drawing" width="300"/>
+<img src="https://github.com/sergiomesasyelamos2000/CC-Proyecto-22-23/blob/hito-2/docs/img/cypress.png" alt="drawing" width="300"/>
