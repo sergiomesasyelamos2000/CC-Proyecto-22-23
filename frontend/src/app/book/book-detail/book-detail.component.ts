@@ -1,24 +1,24 @@
-import { Location } from '@angular/common';
-import { Component } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { ActivatedRoute, Router } from '@angular/router';
-import { catchError } from 'rxjs';
-import { InputModel } from 'src/app/shared/components/input/model/input.model';
-import { UpdateBookDto } from 'src/app/shared/dtos/book/book-update.dto';
-import { Book } from 'src/app/shared/interface/book.model';
-import { InputService } from 'src/app/shared/services/input.service';
-import { NotificationsService } from 'src/app/shared/services/notifications.service';
-import { encrypt } from 'src/app/shared/Utils';
-import { environment } from 'src/environments/environment';
-import { BookService } from '../book.service';
+import { Location } from "@angular/common";
+import { Component } from "@angular/core";
+import { FormControl, FormGroup, Validators } from "@angular/forms";
+import { ActivatedRoute, Router } from "@angular/router";
+import { catchError } from "rxjs";
+import { InputModel } from "src/app/shared/components/input/model/input.model";
+import { UpdateBookDto } from "src/app/shared/dtos/book/book-update.dto";
+import { Book } from "src/app/shared/interface/book.model";
+import { InputService } from "src/app/shared/services/input.service";
+import { NotificationsService } from "src/app/shared/services/notifications.service";
+import { encrypt } from "src/app/shared/Utils";
+import { environment } from "src/environments/environment";
+import { BookService } from "../book.service";
 
-/** 
+/**
  * Component to show book selected info and updated
  */
 @Component({
-  selector: 'app-book-detail',
-  templateUrl: './book-detail.component.html',
-  styleUrls: ['./book-detail.component.scss'],
+  selector: "app-book-detail",
+  templateUrl: "./book-detail.component.html",
+  styleUrls: ["./book-detail.component.scss"],
 })
 export class BookDetailComponent {
   private bookId = 0;
@@ -45,7 +45,6 @@ export class BookDetailComponent {
   public autorsInputModel?: InputModel;
   public photoInputModel?: InputModel;
 
-
   constructor(
     private readonly bookService: BookService<Book>,
     private readonly inputService: InputService,
@@ -55,14 +54,14 @@ export class BookDetailComponent {
     private router: Router
   ) {
     this.route.params.subscribe((params) => {
-      this.bookId = params['id'];
+      this.bookId = params["id"];
       this.bookService
         .findByPropertie(`id:${this.bookId}`)
         .pipe(
           catchError((error) => {
             this.location.back();
             throw new Error();
-          }),
+          })
         )
         .subscribe((book) => {
           this.book = book;
@@ -80,7 +79,10 @@ export class BookDetailComponent {
     this.nameInputControl = new FormControl(this.book?.name, []);
     this.typeInputControl = new FormControl(this.book?.type, []);
     this.descriptionInputControl = new FormControl(this.book?.description, []);
-    this.publicationDateInputControl = new FormControl(this.book?.publicationDate, []);
+    this.publicationDateInputControl = new FormControl(
+      this.book?.publicationDate,
+      []
+    );
     this.editorsInputControl = new FormControl(this.book?.editors, []);
     this.autorsInputControl = new FormControl(this.book?.autors, []);
     this.photoInputControl = new FormControl(this.book?.photo, []);
@@ -98,11 +100,21 @@ export class BookDetailComponent {
     this.ISBNInputModel = this.inputService.getISBNInput(this.ISBNInputControl);
     this.nameInputModel = this.inputService.getNameInput(this.nameInputControl);
     this.typeInputModel = this.inputService.getTypeInput(this.typeInputControl);
-    this.descriptionInputModel = this.inputService.getDescriptionInput(this.descriptionInputControl);
-    this.publicationDateInputModel = this.inputService.getPublicationDateInput(this.publicationDateInputControl);
-    this.editorsInputModel = this.inputService.getEditorsInput(this.editorsInputControl);
-    this.autorsInputModel = this.inputService.getAutorsInput(this.autorsInputControl);
-    this.photoInputModel = this.inputService.getPhotoInput(this.photoInputControl);
+    this.descriptionInputModel = this.inputService.getDescriptionInput(
+      this.descriptionInputControl
+    );
+    this.publicationDateInputModel = this.inputService.getPublicationDateInput(
+      this.publicationDateInputControl
+    );
+    this.editorsInputModel = this.inputService.getEditorsInput(
+      this.editorsInputControl
+    );
+    this.autorsInputModel = this.inputService.getAutorsInput(
+      this.autorsInputControl
+    );
+    this.photoInputModel = this.inputService.getPhotoInput(
+      this.photoInputControl
+    );
   }
 
   /**
@@ -118,7 +130,7 @@ export class BookDetailComponent {
     Object.keys(updatedBook).forEach((propertie) => {
       if (
         updatedBook[propertie] === this.originalBook[propertie] ||
-        updatedBook[propertie] === ''
+        updatedBook[propertie] === ""
       ) {
         delete updatedBook[propertie];
       }
@@ -131,16 +143,16 @@ export class BookDetailComponent {
       .update(this.bookId, updatedBook)
       .subscribe((response) =>
         this.notificationService.showCompossedSuccessNotification(
-          'success.database.generic.book',
-          { action: 'success.database.action.update' },
-        ),
+          "success.database.generic.book",
+          { action: "success.database.action.update" }
+        )
       );
   }
 
   /**
-   * Navigate to book-list 
+   * Navigate to book-list
    */
-   public goBookList(): void {
+  public goBookList(): void {
     this.router.navigate([environment.url.components.books]);
   }
 }
