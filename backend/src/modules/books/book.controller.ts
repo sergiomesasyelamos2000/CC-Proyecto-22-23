@@ -53,14 +53,17 @@ import { BookService } from './book.service';
       description: 'Get all books was successfully completed',
       type: [BookEntity],
     })
+    
     @ApiForbiddenResponse({
       status: 403,
       description: 'Get all books failed',
     })
+
     @ApiUnauthorizedResponse({
       status: 401,
       description: 'Book acces token is not present or is invalid',
     })
+
     @UseGuards(AuthGuard('jwt'))
     @Get()
     public findAll(@Headers() headers, @Res() response): Promise<BookEntity[]> {
