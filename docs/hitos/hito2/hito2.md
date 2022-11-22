@@ -6,7 +6,7 @@ A continuación, se describirán los procesos y tareas realizadas para llevar a 
 
 ## Contenidos
 
-- Enlace para acceder a la documentación de los test asociada al [gestor de tareas empleado](docs/hitos/hito2/hito2-1.md)
-- Enlace para acceder a la documentación de los test asociada al [marco de pruebas](docs/hitos/hito2/hito2-2.md)
-- Enlace para acceder a la documentación de los test asociada a la [elección de librería de aserciones](docs/hitos/hito2/hito2-3.md)
-- Enlace para acceder a la documentación del [desarrollo realizado para el Hito 2](docs/hitos/hito2/hito2-4.md)
+- Enlace para acceder a la documentación de los test asociada al [gestor de tareas empleado](hito2-1.md)
+- Enlace para acceder a la documentación de los test asociada al [marco de pruebas](hito2-2.md)
+- Enlace para acceder a la documentación de los test asociada a la [elección de librería de aserciones](hito2-3.md)
+- Enlace para acceder a la documentación del [desarrollo realizado para el Hito 2](hito2-4.md)
