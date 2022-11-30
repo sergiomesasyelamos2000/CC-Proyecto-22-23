@@ -1,36 +1,14 @@
-FROM node:12.22-alpine3.14
-LABEL version="0.1.0" maintainer="sergiomesasyelamos@gmail.com" nodeversion=$VER
+FROM node:14.20-alpine As development
 
-#Update container and grant permission to new user
-RUN  apk update && apk upgrade  && rm -rf node_modules \
-    && mkdir -p /app  \
-    && mkdir -p /app/test \
-    && mkdir -p /app/coverage \
-    && mkdir -p /app/test/coverage \
-    && mkdir -p /app/test/src \
-    && mkdir -p /app/node_modules \
-    && mkdir -p /app/test/logs \
-    && mkdir -p /app/test/src/logger 
-   
-   
+WORKDIR /usr/src/app
 
-#Set path to node modules
-ENV PATH="/app/node_modules/.bin:${PATH}"
+COPY backend/package*.json ./
 
-RUN npm config set unsafe-perm true
+RUN npm install && npm update && npm cache clean --force
 
-    
-#Change user not root 
+COPY backend/. ./
 
-RUN chown -R root:root /app && chmod -R  777 /app
-
-WORKDIR /app
-
-COPY backend/package*.json  ./
-RUN npm install \
-    && npm cache clean --force
-
-WORKDIR /app/test
+#RUN npm run build
 
    
 CMD ["npm", "run", "test"] 
