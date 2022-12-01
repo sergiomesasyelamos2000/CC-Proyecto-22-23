@@ -258,14 +258,5 @@ import { BookService } from './book.service';
         headers['Accept-Language']
       );
     }
-
-
-
-
-
-  /*   @Get(':number') 
-    bookId(@Param('number') number): any {
-    return this.booksService.bookId(number);
-  } */
   }
   

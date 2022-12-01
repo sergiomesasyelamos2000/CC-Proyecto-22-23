@@ -4,7 +4,6 @@ import { UtilitiesModule } from 'src/utilities/utilities.module';
 import { BookController } from './book.controller';
 import { BookEntity } from './book.entity';
 import { BookService } from './book.service';
-import { BooksService } from './books.service';
  
 @Module({
   imports: [TypeOrmModule.forFeature([BookEntity]), UtilitiesModule],
