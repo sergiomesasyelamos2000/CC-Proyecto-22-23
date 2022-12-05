@@ -1,8 +1,9 @@
 name: Publish Docker image and run
 
+# Se actualizará cuando se produzca algún cambio sobre la rama main
 on:
   push:
-    branches: [ hito-3 ]
+    branches: [ main ]
 
 jobs:
   push_to_registry:
