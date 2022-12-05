@@ -3,7 +3,7 @@ name: GitHub Container Registry
 # Se actualizará cuando se produzca algún cambio sobre la rama main
 on:
   push:
-    branches: [ hito-3 ]
+    branches: [ main ]
 
 jobs:
   build-and-push-image:
