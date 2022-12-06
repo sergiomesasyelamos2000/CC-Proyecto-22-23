@@ -23,7 +23,7 @@ import { UserService } from '../user.service';
 export class UserDetailComponent {
   private userId = 0;
   private originalUser?: any;
-
+ 
   public user?: User;
   public formGroup = new FormGroup({});
 
