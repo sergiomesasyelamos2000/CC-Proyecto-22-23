@@ -25,7 +25,7 @@ WORKDIR /usr/src/app
 COPY backend/package*.json ./
 ```
 
-5. Se instalan las dependencia con _npm ci_ en lugar de utilizar _npm install_ puesto que está destinado a ser empleado en entornos de Integración Continua (CI), garantizando una instalación limpia de las dependencias. 
+5. Se instalan las dependencia con  _npm install_, garantizando una instalación limpia de las dependencias. 
 Además, se actualizan las dependencias y se procede a limpiar la caché una vez que se han instalado los módulos, todo ello con el objetivo de ahorrar espacio.
 ```
 RUN npm install && npm update && npm cache clean --force
