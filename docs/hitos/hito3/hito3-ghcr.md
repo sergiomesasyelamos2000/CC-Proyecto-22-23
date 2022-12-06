@@ -1,0 +1,5 @@
+# GitHub Container Registry
+GitHub Container Registry almacena imágenes de contenedores dentro de nuestra cuenta de GitHub y permite asociar una imagen a un repositorio, como es el caso de estudio. 
+De esta manera, se puede consultar el paquete generado por el desplieque del contenedor en GitHub Container Registry [aquí](https://github.com/sergiomesasyelamos2000/CC-Proyecto-22-23/pkgs/container/cc-proyecto-22-23).
+
+De manera similar que anteriormente, se ha creado un nuevo _Workflow_ para la actualización automática del código del contenedor desplegado, el cual puede consultarse [aquí](.github/workflows/github-container-registry.yml). Asimismo, los pasos seguidos son equivalentes a los utilizados para la creación del _workflow_ para [DockerHub](docs/hitos/hito3/hito3-update-and-push.md), salvo que en esta ocasión
