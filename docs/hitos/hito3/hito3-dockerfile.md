@@ -22,7 +22,7 @@ WORKDIR /usr/src/app
 
 4. Se copian los archivos _package.json_ en el directorio creado anteriormente:
 ```
-COPY backend/package*.json ./
+COPY backend/package*.json ./ 
 ```
 
 5. Se instalan las dependencia con  _npm install_, garantizando una instalación limpia de las dependencias. 
