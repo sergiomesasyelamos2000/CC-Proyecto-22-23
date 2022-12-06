@@ -16,8 +16,9 @@ En este caso, se indica el registro a utilizar mediante *_registry_* así como e
 
 Por consiguiente, se puede osbervar el correcto funcionamiento del _Action_:
 
-![Action](docs/img/dockerhub.png)
+![Action](docs/img/action1.png)
 
 y la visualización del _Package_:
 
-![Package](docs/img/dockerhub.png)
+![Package](docs/img/package1.png)
+![Package](docs/img/package2.png)

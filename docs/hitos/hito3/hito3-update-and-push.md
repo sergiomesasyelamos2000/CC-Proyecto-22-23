@@ -74,6 +74,6 @@ Por consiguiente, podemos ver que la imagen ha sido subida correctamente a Docke
 
 Además, la _Action_ programada en el repositorio también se comprueba de manera satisfactoria:
 
-![Action1](docs/img/dockerhub.png)
+![Action1](docs/img/action2.png)
 
 
