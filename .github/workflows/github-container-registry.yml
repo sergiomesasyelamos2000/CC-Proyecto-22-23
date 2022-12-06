@@ -3,7 +3,7 @@ name: GitHub Container Registry
 # Se actualizará cuando se produzca algún cambio sobre la rama main
 on:
   push:
-    branches: [ main ]
+    branches: [ hito-3 ]
 
 jobs:
   build-and-push-image:
@@ -21,7 +21,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.TOKEN_CONTAINER_REGISTRY }}
 
       - name: Extract metadata (tags, labels) for Docker
         id: meta
