@@ -1,5 +1,5 @@
 # Elección del contenedor base
-Para llevar a cabo la elección del contenedor base a utilizar en función a las decisiones tomadas en el [Hito 2](docs/hitos/hito2/hito2.md) y teniendo en cuentas tanto las herramientas como los _frameworks_ y lenguajes que se emplearán, es inevitable realizar una comparación de los diferentes tipos de imágenes que existen. De esta manera, los criterios de selección seguidos se han basado en el tamaño de la imagen, el tiempo de ejecución, funcionalidad y características incluidas. Por consiguiente, dado que el lenguaje utilizado es *node* se han contemplado las siguientes alternativas:
+Para llevar a cabo la elección del contenedor base a utilizar en función a las decisiones tomadas en el [Hito 2](./../hito2/hito2.md) y teniendo en cuentas tanto las herramientas como los _frameworks_ y lenguajes que se emplearán, es inevitable realizar una comparación de los diferentes tipos de imágenes que existen. De esta manera, los criterios de selección seguidos se han basado en el tamaño de la imagen, el tiempo de ejecución, funcionalidad y características incluidas. Por consiguiente, dado que el lenguaje utilizado es *node* se han contemplado las siguientes alternativas:
 
  - Imagen node:<version>
  - Imagen node:<version>-alpine

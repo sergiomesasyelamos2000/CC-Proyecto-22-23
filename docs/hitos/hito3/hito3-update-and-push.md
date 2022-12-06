@@ -1,8 +1,8 @@
 # Actualización y subida de la imagen a DockerHub
 Se ha empleado DockerHub para almacenar el contenedor de comprobación de los tests puesto que se trata de un servicio proporcionado por Docker que además de permitir realizar búsquedas y compartir imágenes de contenedores también permite llevar a cabo acciones programadas sobre un repositorio cargado, es decir, nos hemos ayudado de los _webhooks_ de _GitHub Actions_.
-En nuestro caso, tal y como se ha comentado, se utilziará para alojar el contendor de test del proyecto, actualizando la iamgen de manera automática a través de un _Workflow_, el cual puede consultarse [aquí](.github/workflows/docker.yml).
+En nuestro caso, tal y como se ha comentado, se utilziará para alojar el contendor de test del proyecto, actualizando la iamgen de manera automática a través de un _Workflow_, el cual puede consultarse [aquí](./../../../.github/workflows/docker.yml).
 
-Por consiguiente, se puede consultar un ejemplo de ejecución de la _Action_ [aquí]().
+Por consiguiente, se puede consultar un ejemplo de ejecución de la _Action_ [aquí](https://github.com/sergiomesasyelamos2000/CC-Proyecto-22-23/actions/workflows/docker.yml).
 
 ## Versiones _webhooks_
 En cuanto a las versiones empleadas para los distintos usos del _Workflow_ se han seguido las recomendaciones más utilizadas por [comunidad](https://github.com/docker/login-action):
@@ -70,10 +70,10 @@ Posteriormente, se define un único _job_ que se ejecutará sobre la máquina de
 
 Por consiguiente, podemos ver que la imagen ha sido subida correctamente a DockerHub:
 
-![DockerHub](docs/img/dockerhub.png)
+![DockerHub](./../../img/dockerhub.png)
 
 Además, la _Action_ programada en el repositorio también se comprueba de manera satisfactoria:
 
-![Action1](docs/img/action2.png)
+![Action1](./../../img/action2.png)
 
 
