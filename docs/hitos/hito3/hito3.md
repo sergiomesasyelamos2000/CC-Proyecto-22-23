@@ -10,4 +10,4 @@ A continuación, se describirán los procesos y tareas realizadas para llevar a 
 - Enlace para acceder a la documentación asociada sobre los [contenedores en DockerHub](hito3-update-and-push.md).
 - Enlace para acceder a la documentación asociada sobre los [contenedores en GitHub Container Registry](hito3-ghcr.md).
 - Enlace para acceder al archivo Dockerfile para la [creacion de la imagen](./../../../Dockerfile).
-- Enlace para acceder a la documentación asociada sobre la [justificación del Dockerfile creado](hito3-dockerfile.md.md).
+- Enlace para acceder a la documentación asociada sobre la [justificación del Dockerfile creado](hito3-dockerfile.md).
