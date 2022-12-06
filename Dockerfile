@@ -6,7 +6,7 @@ WORKDIR /usr/src/app
 
 COPY backend/package*.json ./
 
-RUN npm ci && npm update && npm cache clean --force
+RUN npm install && npm update && npm cache clean --force
 
 COPY backend/. ./
    
