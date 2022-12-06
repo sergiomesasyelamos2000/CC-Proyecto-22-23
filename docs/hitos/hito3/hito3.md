@@ -1,6 +1,6 @@
 # Hito 3
 
-> Versión 2.0.0
+> Versión 3.0.0
 
 A continuación, se describirán los procesos y tareas realizadas para llevar a cabo el hito 3.
 
