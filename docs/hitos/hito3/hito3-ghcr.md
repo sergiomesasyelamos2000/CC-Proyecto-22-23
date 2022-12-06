@@ -14,6 +14,8 @@ De manera similar que anteriormente, se ha creado un nuevo _Workflow_ para la ac
 ```
 En este caso, se indica el registro a utilizar mediante *_registry_* así como el usuario de GitHub empleado (obtenido de la variable *_github.actor_*) y la contraseña. Este último parámetro se trata de un _token_ proporcionado por GitHub al comienzo de cada ejecución de flujo de trabajo, creando de manera automática un _secret_ llamadO _GITHUB_TOKEN_ y que puede ser utilizado para autenticarse en un _workflow_.
 
+Además, se puede consultar un ejemplo de ejecución de la _Action_ [aquí](https://github.com/sergiomesasyelamos2000/CC-Proyecto-22-23/actions/workflows/github-container-registry.yml).
+
 Por consiguiente, se puede osbervar el correcto funcionamiento del _Action_:
 
 ![Action](./../../img/action1.png)
