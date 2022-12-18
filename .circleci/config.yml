@@ -5,7 +5,7 @@ jobs:
   test:
     docker:
       - image: sergiomesasyelamos2000/cc-proyecto-22-23:latest
-    working_directory: /root/project
+    working_directory: /root/project/backend
     steps:
       - checkout:
           path: /root/project/backend
