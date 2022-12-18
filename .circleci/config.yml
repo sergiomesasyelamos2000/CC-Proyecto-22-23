@@ -6,11 +6,7 @@ jobs:
       - image: sergiomesasyelamos2000/cc-proyecto-22-23:latest
     steps:
       - checkout
-      - run: npm rm -rf node_modules
       - run: cd backend && npm install --save && npm run test
-      - run: ls -l
-      - run: npm install --save
-      - run: npm run test
 
 workflows:
   test_project:
