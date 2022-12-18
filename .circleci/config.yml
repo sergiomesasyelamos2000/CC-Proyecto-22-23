@@ -8,7 +8,9 @@ jobs:
     working_directory: /root/project/backend
     steps:
       - checkout
-      - run: sudo npm run jest --verbose
+      - run: 
+        npm cache clear -f
+        npm run jest --verbose
       
 workflows:
   test_my_app:
