@@ -21,7 +21,7 @@ De esta manera, una vez que nos hemos registrado en [Circle-CI](https://circleci
 
 Una vez seleccionado el repositorio, se nos abre un dashboard para poder ver los _workflows_ que se han ejecutado y en qué rama:
 
-![dashboard](./../../img/dashboard.PNG.PNG)
+![dashboard](./../../img/dashboard.PNG)
 
 Se debe destacar que cada vez que realicemos un commit en el repositorio, lanzará los tests, consumiendo créditos. Para evitar esto, debemos indicar en el mensaje del commit `[skip ci]` para que no se ejecute la acción.
 
@@ -54,8 +54,16 @@ Tal y como se puede observar en la siguiente imagen, todo ha funciona correctame
 
 ![test](./../../img/testCircle.PNG)
 
+## GitHub Action
 
-Jenkins: También está más enfocado para Java. Hay que descargar un ejecutable para correrlo localmente (no hay versión en cloud), por lo que la configuración es más complicada.
+Otra plataforma que se ha utilizado para la integración continua es Github mediante el uso de las GitHub Actions, la cual ha sido empleada en el hito anterior para el despliegue automatizado del contenedor de pruebas en GitHub Container Registry y DockerHub. Por consiguiente, para este hito se ha creado el siguiente _workflow_ : [run-docker-test.yml](./../../../.github/workflows/github-actions.yml).
+
+Una de las características interesantes de las GitHub Actions es que podemos controlar el proceso de ejecución de los _workflows_ y tener un control total del proceso de integración continua. Además, nos permite utilizar otras _actions_ dentro de la nuestra. Sin embargo, las ejecuciones son mas lentas y se requiere de más pasos para configurar el workflow correctamente a diferencia de otras plataformas como Circle CI.
+
+Gracias a este control que nos ofrecen las Github actions puedo hacer que la action creada para la integración continua se ejecutará después de la action que se encargaba de construir y subir la imagen docker a los distintos hitos, pero solo ocurrirá esto si este proceso de construcción de la imagen tiene éxito. Eso se consigue con lo siguiente:
+
+## Jenkins
+Jenkins es una herramienta de automatización de código abierto escrita en Java con complementos construidos para la integración continua. Jenkins se utiliza para construir y probar sus proyectos de software continuamente, lo que facilita a los desarrolladores la integración de cambios en el proyecto y facilita a los usuarios obtener una nueva compilación. También le permite entregar continuamente su software mediante la integración con una gran cantidad de tecnologías de prueba e implementación. Sin embargo, posee diferentes inconvenientes puesto que requiere que se instale como una aplicación del sistema, no es asíncrona y necesita que se ejecute en una imagen de docker mediante el uso de plugins que dificultan la configuración.
 
 
 
