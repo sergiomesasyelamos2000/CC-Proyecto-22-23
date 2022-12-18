@@ -6,7 +6,7 @@ jobs:
       - image: sergiomesasyelamos2000/cc-proyecto-22-23:latest
     steps:
       - checkout
-      - run: npm run test
+      - run: docker run sergiomesasyelamos2000/cc-proyecto-22-23:latest
 
 workflows:
   test_project:
