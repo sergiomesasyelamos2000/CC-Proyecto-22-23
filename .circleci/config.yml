@@ -9,7 +9,7 @@ jobs:
     steps:
       - checkout:
           path: /root/project/backend
-      - run: npm install
+      - node/install-packages
       - run: npm run test
       
 workflows:
