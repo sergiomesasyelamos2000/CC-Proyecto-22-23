@@ -60,7 +60,34 @@ Otra plataforma que se ha utilizado para la integración continua es Github medi
 
 Una de las características interesantes de las GitHub Actions es que podemos controlar el proceso de ejecución de los _workflows_ y tener un control total del proceso de integración continua. Además, nos permite utilizar otras _actions_ dentro de la nuestra. Sin embargo, las ejecuciones son mas lentas y se requiere de más pasos para configurar el workflow correctamente a diferencia de otras plataformas como Circle CI.
 
-Gracias a este control que nos ofrecen las Github actions puedo hacer que la action creada para la integración continua se ejecutará después de la action que se encargaba de construir y subir la imagen docker a los distintos hitos, pero solo ocurrirá esto si este proceso de construcción de la imagen tiene éxito. Eso se consigue con lo siguiente:
+A continuación, se analizará el _GitHub Action_ creado:
+```
+name: Run Tests
+
+on:
+  workflow_run:
+    workflows: ["GitHub Container Registry"]
+    branches: [main]
+    types:
+      - completed
+
+jobs:
+  run_test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Lanzar Tests CI
+        run:
+          docker run -t -v `pwd`:/app/test sergiomesasyelamos2000/cc-proyecto-22-23
+```
+
+Se debe destacar que esta _action_ únicamente se ejecutará después de que la _action_ que se encargaba de construir y subir la imagen en GitHub Container Registry y DockerHub (realizada en el hito anterior) tenga éxito. Eso se consigue gracias a `workflow_run`, puesto que le indicamos mediante la clave `workflows` el nombre del _workflow_ encargado de subir la imagen. Adicionalmente, a través de la clave `branches` se indica que est _action_ solo se ejecutará cuando se haya ejecutado el _workflow_ del que depende en la rama _main_. Por último, se le indica mediante la palabra `completed` que se inicie cuando el _workflow_ anteriormente comentado haya terminado.
+
+Por otro lado, si el _workflow_ del que depende ha tenido éxito se ejecutarán dos `steps`, el primero de ellos realzia un `checkout` del repositorio y el segundo  ejecuta la imagen a través de Docker con los tests creados en hitos anteriores.
+
+En conclusión, se ha llevado a cabo este procesamiento pues no es coherente ejecutar la imagen Docker si esta ha sido actualizada o si presenta algún tipo de error. El resultado de la ejecución de este _workflow_ con los tests automatizados puede consultarse [aqui](), aunque en la siguiente imagen se muestra el correcto funcionamiento de esta GitHub Action:
+
+![test](./../../img/testCircle.PNG)
 
 ## Jenkins
 Jenkins es una herramienta de automatización de código abierto escrita en Java con complementos construidos para la integración continua. Jenkins se utiliza para construir y probar sus proyectos de software continuamente, lo que facilita a los desarrolladores la integración de cambios en el proyecto y facilita a los usuarios obtener una nueva compilación. También le permite entregar continuamente su software mediante la integración con una gran cantidad de tecnologías de prueba e implementación. Sin embargo, posee diferentes inconvenientes puesto que requiere que se instale como una aplicación del sistema, no es asíncrona y necesita que se ejecute en una imagen de docker mediante el uso de plugins que dificultan la configuración.
