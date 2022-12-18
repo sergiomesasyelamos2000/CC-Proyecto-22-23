@@ -7,7 +7,8 @@ jobs:
     steps:
       - checkout
       - run: npm rm -rf node_modules && rm package.json
-      - run: npm install
+      - run: ls -l
+      - run: npm install --save
       - run: npm run test
 
 workflows:
