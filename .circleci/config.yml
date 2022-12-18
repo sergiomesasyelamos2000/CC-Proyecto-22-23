@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run: npm rm -rf node_modules
-      - run: cd backend
+      - run: cd backend && ls -l
       - run: ls -l
       - run: npm install --save
       - run: npm run test
