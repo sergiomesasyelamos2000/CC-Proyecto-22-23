@@ -61,6 +61,7 @@ Otra plataforma que se ha utilizado para la integración continua es Github medi
 Una de las características interesantes de las GitHub Actions es que podemos controlar el proceso de ejecución de los _workflows_ y tener un control total del proceso de integración continua. Además, nos permite utilizar otras _actions_ dentro de la nuestra. Sin embargo, las ejecuciones son mas lentas y se requiere de más pasos para configurar el workflow correctamente a diferencia de otras plataformas como Circle CI.
 
 A continuación, se analizará el _GitHub Action_ creado:
+
 ```
 name: Run Tests
 
