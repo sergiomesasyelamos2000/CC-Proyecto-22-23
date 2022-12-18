@@ -21,7 +21,7 @@ De esta manera, una vez que nos hemos registrado en [Circle-CI](https://circleci
 
 Una vez seleccionado el repositorio, se nos abre un dashboard para poder ver los _workflows_ que se han ejecutado y en qué rama:
 
-![dashboard](./../../img/loginCircle.PNG)
+![dashboard](./../../img/dashboard.PNG.PNG)
 
 Se debe destacar que cada vez que realicemos un commit en el repositorio, lanzará los tests, consumiendo créditos. Para evitar esto, debemos indicar en el mensaje del commit `[skip ci]` para que no se ejecute la acción.
 
@@ -31,7 +31,7 @@ Por consiguiente, para que esta herramienta de integración continua funcione ad
 version: 2.1
 
 jobs:
-  test:
+  build:
     docker:
       - image: sergiomesasyelamos2000/cc-proyecto-22-23:latest
     steps:
@@ -42,7 +42,7 @@ jobs:
 workflows:
   test_project:
     jobs:
-      - test
+      - build
 ```
 
 A continuación, se describirá el arvhivo de configuración anterior. En primer lugar, hay que especificar la versión de Circle-CI a utilizar, en este caso se ha hecho uso de la versión 4.0.1 puesto que es la última disponible actualmente y otorga muchas funcionalidades nuevas, como la de los `orbs` comentados anteriormente.
@@ -52,7 +52,7 @@ Posteriormente, se han indicado los `jobs` o trabajos a realizar. En este caso, 
 Más tarde, se indican una serie de `steps` a realizar con la imagen construida y se ejecuta la acción `checkout`, la cual nos permite ejecutar comandos dentro del contenedor sin necesidad de por ejemplo, crear y montar volúmenes. Por último, dentro del apartado `run`, se ejecutan los comandos deseado, en este caso la tarea de ejecución de test mediante la instrucción `npm run test`. 
 Tal y como se puede observar en la siguiente imagen, todo ha funciona correctamente:
 
-![test](./../../img/action1.png)
+![test](./../../img/testCircle.PNG)
 
 
 Jenkins: También está más enfocado para Java. Hay que descargar un ejecutable para correrlo localmente (no hay versión en cloud), por lo que la configuración es más complicada.
