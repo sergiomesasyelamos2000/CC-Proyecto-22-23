@@ -8,7 +8,6 @@ jobs:
     working_directory: /root/project/backend
     steps:
       - checkout
-      - node/backend/install-packages
       - run: npm run test
       
 workflows:
