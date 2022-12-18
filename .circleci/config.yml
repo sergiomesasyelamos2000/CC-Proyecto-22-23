@@ -9,7 +9,6 @@ jobs:
     steps:
       - checkout
       - run: npm cache clear -f
-      - run: rm /root/project/backend/package.json
       - run: npm install
       - run: npm run jest --verbose
       
