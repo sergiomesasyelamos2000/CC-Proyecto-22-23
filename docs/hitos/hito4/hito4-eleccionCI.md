@@ -28,21 +28,21 @@ Se debe destacar que cada vez que realicemos un commit en el repositorio, lanzar
 Por consiguiente, para que esta herramienta de integración continua funcione adecuadamente es necesario crear un archivo llamado _config.yml_ en la carpeta _.circleci_ de nuestro repositodio de GitHub, tal y como se puede ver a continuación:
 
 ```
-version: 4.0.1
+version: 2.1
+
 jobs:
-  build:
+  test:
     docker:
       - image: sergiomesasyelamos2000/cc-proyecto-22-23:latest
     steps:
       - checkout
-      - run:
-          name: Running container
-          command: npm run test
+      - name: Running tests
+      - run: cd backend && npm install --save && npm run test
+
 workflows:
-  test_my_app:
+  test_project:
     jobs:
       - test
- 
 ```
 
 A continuación, se describirá el arvhivo de configuración anterior. En primer lugar, hay que especificar la versión de Circle-CI a utilizar, en este caso se ha hecho uso de la versión 4.0.1 puesto que es la última disponible actualmente y otorga muchas funcionalidades nuevas, como la de los `orbs` comentados anteriormente.
