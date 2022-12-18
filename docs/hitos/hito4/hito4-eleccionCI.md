@@ -16,11 +16,14 @@ Sin embargo,presenta la desventaja de que es su rendimiento no es muy alto, los 
 De manera similar al anterior, también permite ejecutar Nodejs, contenedores...Además, Circle CI no solamente es utilizado para la ejecución de pruebas de código sino que permite hacer despliegues y cualquier tipo de trabajo en la nube. Esta plataforma ofrece una característica muy interesante que la diferencia del resto, los _orbs_. Los _orbs_ son fragmentos de código reutilizables que permiten acelerar el proceso de configuración y ejecución de nuestros tests sin necesidad de escribir gran cantidad de código. Circle Ci ofrece una respuesta rápida utilizando un plan totalmente gratuito a pesar de que se restringe en gran medida el número de peticiones que se pueden llegar a realizar.
 
 De esta manera, una vez que nos hemos registrado en [Circle-CI](https://circleci.com/), para poder comenzar el proceso de integración continua basta con conectar nuestro repositorio de Github con la plataforma mediante un fichero de configuración en el repositorio, el cual puede visualizarse en el siguiente [enlace](./../../../.circleci/config.yml). 
+
+![login](./../../img/loginCircle.PNG)
+
 Una vez seleccionado el repositorio, se nos abre un dashboard para poder ver los _workflows_ que se han ejecutado y en qué rama:
 
-![dashboard](./../../img/action1.png)
+![dashboard](./../../img/loginCircle.PNG)
 
-Se debe destacar que cada vez que realicemos un commit en el repositorio, lanzará los tests, consumiendo créditos. Para evitar esto, debemos indicar en el mensaje del commit [skip ci] para que no se ejecute la acción.
+Se debe destacar que cada vez que realicemos un commit en el repositorio, lanzará los tests, consumiendo créditos. Para evitar esto, debemos indicar en el mensaje del commit `[skip ci]` para que no se ejecute la acción.
 
 Por consiguiente, para que esta herramienta de integración continua funcione adecuadamente es necesario crear un archivo llamado _config.yml_ en la carpeta _.circleci_ de nuestro repositodio de GitHub, tal y como se puede ver a continuación:
 
