@@ -7,7 +7,9 @@ jobs:
       - image: sergiomesasyelamos2000/cc-proyecto-22-23:latest
     steps:
       - checkout
-      - node/install-packages
+      - run:
+          name: Running container
+          command: npm run test1
 workflows:
   test_my_app:
     jobs:
