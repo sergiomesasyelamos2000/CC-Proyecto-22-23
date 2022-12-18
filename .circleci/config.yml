@@ -8,9 +8,7 @@ jobs:
     steps:
       - checkout:
           path: /root/project/backend
-      - run:
-          name: Running container
-          command: npm run test1
+      
 workflows:
   test_my_app:
     jobs:
