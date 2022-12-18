@@ -7,7 +7,6 @@ jobs:
       - checkout
       - run:
           name: Running container
-          command: npm run test
 workflows:
   test_my_app:
     jobs:
