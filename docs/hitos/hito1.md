@@ -1,4 +1,4 @@
-# Hito 1
+# :computer: Hito 1 :computer:
 
 > Versión 1.0.1
 

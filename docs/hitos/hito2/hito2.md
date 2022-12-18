@@ -1,4 +1,4 @@
-# Hito 2
+# :pencil2: Hito 2 :pencil2:
 
 > Versión 2.0.0
 

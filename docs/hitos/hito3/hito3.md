@@ -1,4 +1,4 @@
-# Hito 3
+# :whale: Hito 3 :whale:
 
 > Versión 3.0.0
 

@@ -43,6 +43,10 @@ El sistema beneficiaría a:
 
 - En el siguiente enlace se podrá acceder al [Hito 2](docs/hitos/hito2/hito2.md) donde se define la elección y configuración del gestor de tareas, el uso de la biblioteca de aserciones así como el marco de pruebas empleado. Además, se proporciona diferente información como los tests unitarios realizados y su correspondencia con el avance de código.
 
-## :whale: Docker:
+## :whale: Docker: 
 
 - En el siguiente enlace se podrá acceder al [Hito 3](docs/hitos/hito3/hito3.md) donde se define la elección y justificación del contenedor base y la creación del archivo Dockerfile siguiendo las buenas prácticas y adaptándolo de manera correcta a las clases y módulos del proyecto. Además, se proporciona la documentación asociada tanto a la subida del contendor a DockerHub como a la actualización automática así como el uso de registros alternativos y públicos como GitHub Container Registry.
+
+## :scroll: CI - Integración Continua: 
+
+- En el siguiente enlace se podrá acceder al [Hito 4](docs/hitos/hito4/hito4.md) donde se define la elección y justificación de los distintos sistemas de integración continua así como la configuración de algunos de ellos. Además, se proporciona la documentación asociada tanto a la creación del archivo de configuración de Circle CI como de GitHub Actions, todo ello haciendo uso y aprovechando el contenedor de Docker creado en el hito 3.

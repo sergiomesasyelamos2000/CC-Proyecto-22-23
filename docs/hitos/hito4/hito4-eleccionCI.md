@@ -85,20 +85,23 @@ Se debe destacar que esta _action_ únicamente se ejecutará después de que la 
 
 Por otro lado, si el _workflow_ del que depende ha tenido éxito se ejecutarán dos `steps`, el primero de ellos realzia un `checkout` del repositorio y el segundo  ejecuta la imagen a través de Docker con los tests creados en hitos anteriores.
 
-En conclusión, se ha llevado a cabo este procesamiento pues no es coherente ejecutar la imagen Docker si esta ha sido actualizada o si presenta algún tipo de error. El resultado de la ejecución de este _workflow_ con los tests automatizados puede consultarse [aqui](), aunque en la siguiente imagen se muestra el correcto funcionamiento de esta GitHub Action:
+En conclusión, se ha llevado a cabo este procesamiento pues no es coherente ejecutar la imagen Docker si esta ha sido actualizada o si presenta algún tipo de error. El resultado de la ejecución de este _workflow_ con los tests automatizados puede consultarse [aqui](https://github.com/sergiomesasyelamos2000/CC-Proyecto-22-23/actions/workflows/github-actions.yml), aunque en la siguiente imagen se muestra el correcto funcionamiento de esta GitHub Action:
 
-![test](./../../img/testCircle.PNG)
+![testActions](./../../img/runTestActions.PNG)
 
 ## Jenkins
 Jenkins es una herramienta de automatización de código abierto escrita en Java con complementos construidos para la integración continua. Jenkins se utiliza para construir y probar sus proyectos de software continuamente, lo que facilita a los desarrolladores la integración de cambios en el proyecto y facilita a los usuarios obtener una nueva compilación. También le permite entregar continuamente su software mediante la integración con una gran cantidad de tecnologías de prueba e implementación. Sin embargo, posee diferentes inconvenientes puesto que requiere que se instale como una aplicación del sistema, no es asíncrona y necesita que se ejecute en una imagen de docker mediante el uso de plugins que dificultan la configuración.
 
+# Conclusiones
 
+Tras la utilización de varias plataformas para la integración continua, se pueden extraer las siguientes conclusiones:
 
+- Todas las plataformas utilizadas son aceptables para trabajar con proyectos de un tamaño pequeño, ya que ofrecen bastante características para lograr un sistema de integración continua eficiente, sencillo y rápido.
 
+- Basándonos en la facilidad de uso y la sencillez de la configuración, Circle CI se corona como la mejor plataforma de integración continua ya que el uso de `orbs` facilita y agiliza el proceso de integración continua de manera gratuita.
 
+- Se hace uso de los contenedores generados en las diferentes iteraciones anteriores mediante el uso de CI, más concretamente en DockerHub y GitHub Container Registry, por lo que cada vez que se genera un nuevo contenedor, se ejecutan los distintos tests automáticamente.
 
+- De nuevo, se emplea el gestor de tareas (recordemos que se utilziada *npm*), el cual resulta de gran utilidad puesto que permite lanzar las tareas de manera rápida y sencilla, pudiendo configurarlo en el ya conocido [package.json](./../../../backend/package.json).
 
-```
-FROM node:14.20-alpine As development
-```
-
+Por consiguiente, se ha escogido Circle CI como herramienta de Integración Continua.
