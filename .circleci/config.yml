@@ -8,8 +8,6 @@ jobs:
     working_directory: /root/project/backend
     steps:
       - checkout
-      - run: npm cache clear -f
-      - run: npm init
       - run: npm install
       - run: npm run jest --verbose
       
