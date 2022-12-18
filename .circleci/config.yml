@@ -6,9 +6,7 @@ jobs:
       - image: sergiomesasyelamos2000/cc-proyecto-22-23:latest
     steps:
       - checkout
-      - run: 
-        name: Running tests
-        command: cd backend && npm install --save && npm run test
+      - run: cd backend && npm install --save && npm run test
 
 workflows:
   test_project:
