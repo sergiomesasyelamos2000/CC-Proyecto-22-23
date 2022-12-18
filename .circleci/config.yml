@@ -6,7 +6,7 @@ jobs:
       - image: sergiomesasyelamos2000/cc-proyecto-22-23:latest
     steps:
       - checkout
-      - run: npm rm -rf node_modules && rm package.json
+      - run: npm rm -rf node_modules
       - run: ls -l
       - run: npm install --save
       - run: npm run test
